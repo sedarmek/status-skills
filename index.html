@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index-styles.css">
+    <script src="./js/canvas-skills.js"></script>
+    <title>Personal Status</title>
+</head>
+<body>
+    <div class="main-container">
+        <header class="header-principal">
+            <h1>Skills</h1>
+            <ul class="header-menu">
+                <li><a href="./html/ingles.html">Ingles</a></li>
+                <li><a href="./html/ejercicio.html">Ejercicio</a></li>
+                <li><a href="./html/programacion.html">Programacion</a></li>
+                <li><a href="./html/dibujo.html">Dibujo</a></li>
+                <li><a href="./html/piano.html">Piano</a></li>
+            </ul>
+        </header>
+        <main class="main-principal">
+            <h2>Status</h2>
+            <div class="container-avatar">
+                <h3>Avatar</h3>
+                <canvas class="canvas-skills-base" id="canvas-skills-base" width="1000px" height="1000px">
+                </canvas>
+                <canvas class="canvas-skills-current" id="canvas-skills-current" width="250px" height="250px"></canvas>
+                <div class="container-canvas-name-skills">
+                    <h2>Ingles</h2>
+                    <h2>Ejercicio</h2>
+                    <h2>Programacion</h2>
+                    <h2>Dibujo</h2>
+                    <h2>Piano</h2>
+                </div>
+            </div>
+            <div class="container-skills">
+                <div class="skill">
+                    <h3>ingles</h3>
+                    <input type="number" id="skill-1" min="0" max="1000">
+                    <p id="p-input-1"></p>
+                </div>
+                <div class="skill">
+                    <h3>ejercicio</h3>
+                    <input type="number" id="skill-2" min="0" max="1000">
+                    <p id="p-input-2"></p>
+                </div>
+                <div class="skill">
+                    <h3>programacion</h3>
+                    <input type="number" id="skill-3" min="0" max="1000">
+                    <p id="p-input-3"></p>
+                </div>
+                <div class="skill">
+                    <h3>dibujo</h3>
+                    <input type="number" id="skill-4" min="0" max="1000">
+                    <p id="p-input-4"></p>
+                </div>
+                <div class="skill">
+                    <h3>piano</h3>
+                    <input type="number" id="skill-5" min="0" max="1000">
+                    <p id="p-input-5"></p>
+                </div>
+            </div>
+        </main>
+        <aside class="aside-principal">
+            <h2>cronometro y convertidor de minutos a decimales</h2>
+            <div class="container-cronometro">
+                <h3>cronometro</h3>
+                <p id="cron-tiempo">00:00</p>
+                <input type="button" value="empezar" id="cron-btn-empezar">
+                <input type="button" value="pausar" id="cron-btn-pausar">
+                <input type="button" value="reiniciar" id="cron-btn-reiniciar">
+            </div>
+            <div class="container-convertidor">
+                <h3>convertidor</h3>
+                <input type="number" placeholder="minutos" id="convertidor-minutes">
+                <p id="convertidor-decimals">Horas</p>
+            </div>
+        </aside>
+        <footer class="footer-principal"><h2>footer</h2></footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+:root{
+    --bgcolor-body: #0000ff;
+    --bgcolor-main-container: #ff0000;
+    /* header */
+    --bgcolor-header-principal: #1f2228;
+    --bgcolor-header-menu: #243f60;
+    --bgcolor-header-menu-li: #232222;
+    /* main */
+    --bgcolor-main-principal: #262a36;
+    --bgcolor-container-avatar: #2b354bba;
+    --canvas-width: 10em;
+    --canvas-height: 10em;
+    --bgcolor-skill: #55397d69;
+    --bgcolor-skill-input: #5050508a;
+    /* aside */
+    --bgcolor-aside-principal: #262a36;
+    --bgcolor-container-cron-h3: #1c2e44;
+    --bgcolor-container-cron-p: #4b346d80;
+    --bgcolor-container-cron-button: #355b8497;
+    --bgcolor-container-convert: #4e2e7057;
+    --bgcolor-container-convert-h3: #375c8949;
+    --bgcolor-container-convert-input: #555185ca;
+    --bgcolor-container-convert-p: #424279f1;
+    /* footer */
+    --bgcolor-footer-principal: #262a36;
+}
+*{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: auto;
+    height: 100%;
+    margin: 0;
+    background-color: var(--bgcolor-body);
+}
+
+.main-container{
+    width: auto;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: var(--bgcolor-main-container);
+    display: grid;
+    grid-gap: 1px;
+    grid-template-areas:
+    "header"
+    "main"
+    "aside"
+    "footer";
+}
+.header-principal{
+    text-align: center;
+    background-color: var(--bgcolor-header-principal);
+    grid-area: header;
+}
+.header-menu{
+    list-style: none;
+    padding: 0.5em 0.5em;
+    background-color: var(--bgcolor-header-menu);
+    display: grid;
+    grid-gap: 0.5em;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+}
+.header-menu li{
+    padding: 0.2em;
+    background-color:  var(--bgcolor-header-menu-li);
+}
+.main-principal{
+    text-align: center;
+    padding: 1em 0;
+    background-color: var(--bgcolor-main-principal);
+    grid-area: main;
+    display: grid;
+    grid-gap: 2em;
+    justify-content: center;
+    align-content: center;
+}
+.container-avatar{
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: var(--bgcolor-container-avatar);
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "img";
+    justify-content: center;
+    align-content: center;
+}
+.canvas-skills-base{
+    width: var(--canvas-width);
+    height: var(--canvas-height);
+    grid-area: img;
+}
+.canvas-skills-current{
+    width: var(--canvas-width);
+    height: var(--canvas-height);
+    grid-area: img;
+}
+.container-canvas-name-skills{
+    position: relative;
+    grid-area: img;
+}
+.container-canvas-name-skills h2{
+    font-size: 0.5em;
+    height: 1em;
+    width: auto;
+    margin: auto;/*El valor 'auto' es necesario para centrar.*/
+    position: absolute;
+}
+.container-canvas-name-skills :first-child{
+    left: 0;
+    right: 0;
+}
+.container-canvas-name-skills :nth-child(2){
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.container-canvas-name-skills :nth-child(3){
+    bottom: 0;
+    right: 7%;
+}
+.container-canvas-name-skills :nth-child(4){
+    bottom: 0;
+    left: 17%;
+}
+.container-canvas-name-skills :nth-child(5){
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.container-skills{
+    display: grid;
+    grid-gap: 1px;
+    justify-content: center;
+    align-content: center;
+}
+.skill{
+    width: 25em;
+    height: auto;
+    padding: 0;
+    border-radius: 0.5em;
+    background-color: var(--bgcolor-skill);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: column;
+}
+.skill input{
+    text-align: right;
+    width: 50%;
+    margin: auto 0 auto auto;
+    border-radius: 9px;
+    border: 2px solid #1e1e1ecd;
+    background-color: var(--bgcolor-skill-input);
+}
+.skill input::-webkit-inner-spin-button{
+    appearance: none;
+}
+
+.skill h3, .skill p{
+    margin: 0;/*necesita valor 0 para controlar altura de input*/
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-auto-flow: column;
+}
+.aside-principal{
+    text-align: center;
+    padding: 0.5em;
+    background-color: var(--bgcolor-aside-principal);
+    grid-area: aside;
+    display: grid;
+    grid-gap: 0.5em;
+    justify-content: center;
+    align-content: center;
+}
+.container-cronometro{
+    width: 14em;
+    margin: auto;
+    border-radius: 1em;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "tiempo tiempo tiempo"
+    "btn-iniz btn-pause btn-reiniz";
+    grid-gap: 0;
+}
+.container-cronometro h3{
+    margin: 0;
+    border-radius: 0.5em 0.5em 0 0;
+    background-color: var(--bgcolor-container-cron-h3);
+    grid-area: titulo;
+}
+.container-cronometro p{
+    margin-top: 0;
+    margin-bottom: 0.1em;
+    border-radius: 0 0 0.5em 0.5em;
+    background-color: var(--bgcolor-container-cron-p);
+    grid-area: tiempo;
+}
+.container-cronometro :nth-child(3){
+    border-radius: 1em;
+    border-style: none;
+    background-color: var(--bgcolor-container-cron-button);
+    grid-area: btn-iniz;
+}
+.container-cronometro :nth-child(4){
+    border-radius: 1em;
+    border-style: none;
+    background-color: var(--bgcolor-container-cron-button);
+    grid-area: btn-pause;
+}
+.container-cronometro :nth-child(5){
+    border-radius: 1em;
+    border-style: none;
+    background-color: var(--bgcolor-container-cron-button);
+    grid-area: btn-reiniz;
+}
+.container-convertidor{
+    overflow: hidden;
+    width: 14em;
+    margin: auto;
+    border-radius: 2em;
+    background-color: var(--bgcolor-container-convert);
+    display: grid;
+    grid-gap: 0em;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "titulo titulo"
+    "input conversion";
+}
+.container-convertidor h3{
+    margin: 0;
+    background-color: var(--bgcolor-container-convert-h3);
+    grid-area: titulo;
+}
+.container-convertidor input{
+    text-align: center;
+    font-size: 0.8em;
+    width: 4em;
+    padding: 0;
+    margin: auto 0 auto auto;
+    border: 1px solid white;
+    border-radius: 1em;
+    background-color: var(--bgcolor-container-convert-input);
+    grid-area: input;
+}
+.container-convertidor input::-webkit-inner-spin-button{
+    appearance: none;
+}
+.container-convertidor p{
+    width: 3em;
+    margin: auto auto auto 1em;/*necesario para altura de input*/
+    border: 1px solid white;
+    border-radius: 0.3em;
+    background-color: var(--bgcolor-container-convert-p);
+    grid-area: conversion;
+
+}
+.footer-principal{
+    text-align: center;
+    background-color: var(--bgcolor-footer-principal);
+    grid-area: footer;
+}
