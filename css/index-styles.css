@@ -32,14 +32,14 @@
     padding: 0;
 }
 body{
-    width: auto;
-    height: 100%;
+    /* overflow: hidden; */
+    width: 100vw;
     margin: 0;
     background-color: var(--bgcolor-body);
 }
 
 .main-container{
-    width: auto;
+    width: 100vw;
     min-height: 100vh;
     margin: 0 auto;
     background-color: var(--bgcolor-main-container);
@@ -155,7 +155,8 @@ body{
 }
 .skill input{
     text-align: right;
-    width: 50%;
+    width: 3em;
+    padding: 0.2em;
     margin: auto 0 auto auto;
     border-radius: 9px;
     border: 2px solid #1e1e1ecd;
@@ -164,7 +165,6 @@ body{
 .skill input::-webkit-inner-spin-button{
     appearance: none;
 }
-
 .skill h3, .skill p{
     margin: 0;/*necesita valor 0 para controlar altura de input*/
     display: grid;
@@ -179,19 +179,20 @@ body{
     grid-area: aside;
     display: grid;
     grid-gap: 0.5em;
+    grid-auto-flow: column;
     justify-content: center;
     align-content: center;
 }
 .container-cronometro{
-    width: 14em;
+    width: 12em;
     margin: auto;
     border-radius: 1em;
     display: grid;
     grid-auto-flow: row;
     grid-template-areas: 
-    "titulo titulo titulo"
-    "tiempo tiempo tiempo"
-    "btn-iniz btn-pause btn-reiniz";
+    "titulo"
+    "tiempo"
+    "container-buttons";
     grid-gap: 0;
 }
 .container-cronometro h3{
@@ -207,36 +208,40 @@ body{
     background-color: var(--bgcolor-container-cron-p);
     grid-area: tiempo;
 }
-.container-cronometro :nth-child(3){
-    border-radius: 1em;
-    border-style: none;
-    background-color: var(--bgcolor-container-cron-button);
-    grid-area: btn-iniz;
+.container-buttons{
+    grid-area: container-buttons;
+    display: grid;
+    grid-auto-flow: column;
 }
-.container-cronometro :nth-child(4){
+.container-buttons :nth-child(1){
     border-radius: 1em;
     border-style: none;
     background-color: var(--bgcolor-container-cron-button);
-    grid-area: btn-pause;
 }
-.container-cronometro :nth-child(5){
+.container-buttons :nth-child(2){
+    display: none;
     border-radius: 1em;
     border-style: none;
     background-color: var(--bgcolor-container-cron-button);
-    grid-area: btn-reiniz;
+}
+.container-buttons :nth-child(3){
+    display: none;
+    border-radius: 1em;
+    border-style: none;
+    background-color: var(--bgcolor-container-cron-button);
 }
 .container-convertidor{
     overflow: hidden;
-    width: 14em;
+    width: 12em;
     margin: auto;
     border-radius: 2em;
     background-color: var(--bgcolor-container-convert);
     display: grid;
-    grid-gap: 0em;
-    grid-auto-flow: row;
     grid-template-areas:
     "titulo titulo"
     "input conversion";
+    grid-gap: 0em;
+    grid-auto-flow: row;
 }
 .container-convertidor h3{
     margin: 0;

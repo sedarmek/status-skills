@@ -195,6 +195,9 @@ Task:
     //Inicia el cronometro
     let segundos = 0, minutos = 0, txtSec, txtMin, idTemp;
     function cronStart(){
+        btn_pausar.style.display = "block";
+        btn_reinicio.style.display = "block"
+        btn_empezar.style.display = "none"
         txtMin = puTwoDigits(minutos);
         idTemp = setInterval(() => {
             if(segundos == 59){
@@ -208,6 +211,7 @@ Task:
             }
             texto_CronTiempo.innerHTML = `${txtMin}:${txtSec}`;
         },1000);
+        
     }
     //Reestablece el cronometro
     function cronRestart(){
@@ -217,6 +221,7 @@ Task:
         txtSec = `0${segundos}`;
         texto_CronTiempo.innerHTML = `${txtMin}:${txtSec}`;
         console.log("Se reinicia el temporizador");
+        btn_empezar.style.display = "block"
     }
     //listeners de inputs
     skill_1.addEventListener("keypress", (char) => {
@@ -240,12 +245,12 @@ Task:
         convertidor_decimals.innerHTML = minutesToHours(convertidor_minutes.value);
         }
     });
-
     
     btn_empezar.addEventListener("click", cronStart);
     btn_pausar.addEventListener("click", () => {
         clearInterval(idTemp);
         console.log(`Se pausa el temporizador, tiempo final: ${minutos}m ${segundos}s`);
+        btn_pausar.style.display = "none";
     });
     btn_reinicio.addEventListener("click", cronRestart);
 
