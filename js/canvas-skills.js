@@ -108,7 +108,7 @@ Task:
 
         if (canvas.getContext){
             //pentagono
-            ctx_base.fillStyle = 'rgba(20,100,150, 0.3)';
+            ctx_base.fillStyle = '#545470';
             ctx_base.beginPath();
             ctx_base.moveTo(xCanvasCenter, 0);
             ctx_base.lineTo(xCanvasMax, yCanvasCenter);
@@ -140,7 +140,7 @@ Task:
     function drawSkillsCurrent(){
         convertValueToCanvasPosition();
         if (canvas.getContext){
-            ctx.fillStyle = 'rgba(0,0,150, 0.5)';
+            ctx.fillStyle = '#8484B0';
             ctx.beginPath();
             ctx.clearRect(0,0,xCanvasMaxCurrent,yCanvasMaxCurrent);
             ctx.lineTo(xCanvasCenterCurrent, sk1yConverted);//(1000-width)/2

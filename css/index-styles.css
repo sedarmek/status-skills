@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 :root{
     --bgcolor-body: #0000ff;
-    --bgcolor-main-container: #ff0000;
+    --bgcolor-main-container: #363439;
     /* header */
     --bgcolor-header-principal: #1f2228;
-    --bgcolor-header-menu: #243f60;
-    --bgcolor-header-menu-li: #232222;
+    --bgcolor-header-menu: #545470;
+    --bgcolor-header-menu-li: #8484B0;
     /* main */
-    --bgcolor-main-principal: #262a36;
-    --bgcolor-container-avatar: #2b354bba;
+    --bgcolor-main-principal: #1b1b24;
+    --bgcolor-container-avatar: #262633;/**/
     --canvas-width: 10em;
     --canvas-height: 10em;
-    --bgcolor-skill: #55397d69;
-    --bgcolor-skill-input: #5050508a;
+    --bgcolor-skill: #262633;
+    --bgcolor-skill-input: #545470;
     /* aside */
-    --bgcolor-aside-principal: #262a36;
-    --bgcolor-container-cron-h3: #1c2e44;
-    --bgcolor-container-cron-p: #4b346d80;
-    --bgcolor-container-cron-button: #355b8497;
-    --bgcolor-container-convert: #4e2e7057;
-    --bgcolor-container-convert-h3: #375c8949;
+    --bgcolor-aside-principal: #1b1b24;
+    --bgcolor-container-cron-h3: #262633;
+    --bgcolor-container-cron-p: #545470;
+    --bgcolor-container-cron-button: #8484B0;
+    --bgcolor-container-convert: #545470;
+    --bgcolor-container-convert-h3: #262633;
     --bgcolor-container-convert-input: #555185ca;
-    --bgcolor-container-convert-p: #424279f1;
+    --bgcolor-container-convert-p: #545470;
     /* footer */
-    --bgcolor-footer-principal: #262a36;
+    --bgcolor-footer-principal: #1b1b24;
 }
 *{
     color: aliceblue;
@@ -32,9 +32,7 @@
     padding: 0;
 }
 body{
-    /* overflow: hidden; */
     width: 100vw;
-    margin: 0;
     background-color: var(--bgcolor-body);
 }
 
