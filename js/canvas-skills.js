@@ -215,13 +215,17 @@ Task:
     }
     //Reestablece el cronometro
     function cronRestart(){
+        clearInterval(idTemp);
         segundos = 0;
         minutos = 0
         txtMin = `0${minutos}`;
         txtSec = `0${segundos}`;
         texto_CronTiempo.innerHTML = `${txtMin}:${txtSec}`;
         console.log("Se reinicia el temporizador");
-        btn_empezar.style.display = "block"
+        btn_empezar.style.display = "block";
+        btn_pausar.style.display = "none";
+        btn_reinicio.style.display = "none";
+        btn_empezar.value = "empezar";
     }
     //listeners de inputs
     skill_1.addEventListener("keypress", (char) => {
@@ -251,6 +255,8 @@ Task:
         clearInterval(idTemp);
         console.log(`Se pausa el temporizador, tiempo final: ${minutos}m ${segundos}s`);
         btn_pausar.style.display = "none";
+        btn_empezar.style.display = "block";
+        btn_empezar.value = "continuar";
     });
     btn_reinicio.addEventListener("click", cronRestart);
 
