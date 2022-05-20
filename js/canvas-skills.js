@@ -38,6 +38,7 @@ Task:
     c. poder arrastrar una imagen y guardarla, dentro de motivacion para cada pagina secundaria en skills
 
 */
+'use strict'
        window.onload = () => {
             //storage
             let storageSklValue_1 = localStorage.getItem('storageSkill_1');

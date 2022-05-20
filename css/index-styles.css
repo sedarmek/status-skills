@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 :root{
     --bgcolor-body: #0000ff;
-    --bgcolor-main-container: #363439;
+    --bgcolor-main-container: #9d2121;/*363439*/
     /* header */
     --bgcolor-header-principal: #1f2228;
     --bgcolor-header-menu: #545470;
@@ -30,13 +30,17 @@
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
 }
 body{
-    width: 100vw;
+    /* width: 100vw;
+    height: 100vh; */
     background-color: var(--bgcolor-body);
+    /* box-sizing: border-box; */
 }
 
 .main-container{
+    /* box-sizing: border-box; */
     width: 100vw;
     min-height: 100vh;
     margin: 0 auto;
@@ -50,11 +54,15 @@ body{
     "footer";
 }
 .header-principal{
+    /* box-sizing: border-box; */
+    /* width: 100vw; */
     text-align: center;
     background-color: var(--bgcolor-header-principal);
     grid-area: header;
 }
 .header-menu{
+    /* box-sizing: border-box;
+    width: 100vw; */
     list-style: none;
     padding: 0.5em 0.5em;
     background-color: var(--bgcolor-header-menu);
@@ -68,6 +76,7 @@ body{
     background-color:  var(--bgcolor-header-menu-li);
 }
 .main-principal{
+    /* width: 100vw; */
     text-align: center;
     padding: 1em 0;
     background-color: var(--bgcolor-main-principal);
@@ -133,15 +142,14 @@ body{
     left: 0;
 }
 .container-skills{
+    /* width: 100vw; */
+    padding: 0 0.2em;
     display: grid;
     grid-gap: 1px;
     justify-content: center;
     align-content: center;
 }
 .skill{
-    width: 25em;
-    height: auto;
-    padding: 0;
     border-radius: 0.5em;
     background-color: var(--bgcolor-skill);
     display: grid;
@@ -171,6 +179,8 @@ body{
     grid-auto-flow: column;
 }
 .aside-principal{
+    /* box-sizing: border-box; */
+    /* width: 100vw; */
     text-align: center;
     padding: 0.5em;
     background-color: var(--bgcolor-aside-principal);
@@ -182,8 +192,8 @@ body{
     align-content: center;
 }
 .container-cronometro{
-    width: 12em;
-    margin: auto;
+    max-width: 10em;
+    height: 4em;
     border-radius: 1em;
     display: grid;
     grid-auto-flow: row;
@@ -191,17 +201,14 @@ body{
     "titulo"
     "tiempo"
     "container-buttons";
-    grid-gap: 0;
 }
 .container-cronometro h3{
-    margin: 0;
     border-radius: 0.5em 0.5em 0 0;
     background-color: var(--bgcolor-container-cron-h3);
     grid-area: titulo;
 }
 .container-cronometro p{
     margin-top: 0;
-    margin-bottom: 0.1em;
     border-radius: 0 0 0.5em 0.5em;
     background-color: var(--bgcolor-container-cron-p);
     grid-area: tiempo;
@@ -213,45 +220,42 @@ body{
     grid-auto-columns: 1fr;
 }
 .container-buttons :nth-child(1){
-    border-radius: 1em;
+    border-radius: 0.5em;
     border-style: none;
     background-color: var(--bgcolor-container-cron-button);
 }
 .container-buttons :nth-child(2){
     display: none;
-    border-radius: 1em;
+    border-radius: 0.5em;
     border-style: none;
     background-color: var(--bgcolor-container-cron-button);
 }
 .container-buttons :nth-child(3){
     display: none;
-    border-radius: 1em;
+    border-radius: 0.5em;
     border-style: none;
     background-color: var(--bgcolor-container-cron-button);
 }
 .container-convertidor{
     overflow: hidden;
-    width: 12em;
-    margin: auto;
-    border-radius: 2em;
+    max-width: 10em;
+    border-radius: 0.5em;
     background-color: var(--bgcolor-container-convert);
     display: grid;
     grid-template-areas:
     "titulo titulo"
     "input conversion";
-    grid-gap: 0em;
     grid-auto-flow: row;
+    grid-gap: 0.5em;
 }
 .container-convertidor h3{
-    margin: 0;
     background-color: var(--bgcolor-container-convert-h3);
     grid-area: titulo;
 }
 .container-convertidor input{
     text-align: center;
     font-size: 0.8em;
-    width: 4em;
-    padding: 0;
+    max-width: 4em;
     margin: auto 0 auto auto;
     border: 1px solid white;
     border-radius: 1em;
@@ -262,8 +266,8 @@ body{
     appearance: none;
 }
 .container-convertidor p{
-    width: 3em;
-    margin: auto auto auto 1em;/*necesario para altura de input*/
+    max-width: 3em;
+    margin: auto;/*necesario para altura de input*/
     border: 1px solid white;
     border-radius: 0.3em;
     background-color: var(--bgcolor-container-convert-p);
@@ -271,7 +275,10 @@ body{
 
 }
 .footer-principal{
-    text-align: center;
-    background-color: var(--bgcolor-footer-principal);
     grid-area: footer;
+    /* width: 100vw; */
+    background-color: var(--bgcolor-footer-principal);
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
