@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 :root{
     --bgcolor-body: #0000ff;
-    --bgcolor-main-container: #9d2121;/*363439*/
+    --bgcolor-main-container: #363439;
     /* header */
     --bgcolor-header-principal: #1f2228;
     --bgcolor-header-menu: #545470;
     --bgcolor-header-menu-li: #8484B0;
     /* main */
     --bgcolor-main-principal: #1b1b24;
-    --bgcolor-container-avatar: #262633;/**/
+    --bgcolor-container-avatar: #262633;
     --canvas-width: 10em;
     --canvas-height: 10em;
     --bgcolor-skill: #262633;
@@ -17,7 +17,7 @@
     --bgcolor-aside-principal: #1b1b24;
     --bgcolor-container-cron-h3: #262633;
     --bgcolor-container-cron-p: #545470;
-    --bgcolor-container-cron-button: #8484B0;
+    --bgcolor-button: #8484B0;
     --bgcolor-container-convert: #545470;
     --bgcolor-container-convert-h3: #262633;
     --bgcolor-container-convert-input: #555185ca;
@@ -192,9 +192,10 @@ body{
     align-content: center;
 }
 .container-cronometro{
-    max-width: 10em;
+    width: 8em;
     height: 4em;
     border-radius: 1em;
+    background-color: var(--bgcolor-container-cron-p);
     display: grid;
     grid-auto-flow: row;
     grid-template-areas: 
@@ -203,14 +204,11 @@ body{
     "container-buttons";
 }
 .container-cronometro h3{
+    grid-area: titulo;
     border-radius: 0.5em 0.5em 0 0;
     background-color: var(--bgcolor-container-cron-h3);
-    grid-area: titulo;
 }
 .container-cronometro p{
-    margin-top: 0;
-    border-radius: 0 0 0.5em 0.5em;
-    background-color: var(--bgcolor-container-cron-p);
     grid-area: tiempo;
 }
 .container-buttons{
@@ -222,37 +220,39 @@ body{
 .container-buttons :nth-child(1){
     border-radius: 0.5em;
     border-style: none;
-    background-color: var(--bgcolor-container-cron-button);
+    background-color: var(--bgcolor-button);
 }
 .container-buttons :nth-child(2){
     display: none;
     border-radius: 0.5em;
     border-style: none;
-    background-color: var(--bgcolor-container-cron-button);
+    background-color: var(--bgcolor-button);
 }
 .container-buttons :nth-child(3){
     display: none;
     border-radius: 0.5em;
     border-style: none;
-    background-color: var(--bgcolor-container-cron-button);
+    background-color: var(--bgcolor-button);
 }
 .container-convertidor{
     overflow: hidden;
-    max-width: 10em;
+    width: 8em;
+    height: 4em;
     border-radius: 0.5em;
     background-color: var(--bgcolor-container-convert);
     display: grid;
     grid-template-areas:
     "titulo titulo"
-    "input conversion";
+    "minutes conversion"
+    "btn-convertir btn-convertir";
     grid-auto-flow: row;
-    grid-gap: 0.5em;
 }
 .container-convertidor h3{
     background-color: var(--bgcolor-container-convert-h3);
     grid-area: titulo;
 }
-.container-convertidor input{
+.convertidor-minutes{
+    grid-area: minutes;
     text-align: center;
     font-size: 0.8em;
     max-width: 4em;
@@ -260,9 +260,8 @@ body{
     border: 1px solid white;
     border-radius: 1em;
     background-color: var(--bgcolor-container-convert-input);
-    grid-area: input;
 }
-.container-convertidor input::-webkit-inner-spin-button{
+.convertidor-minutes::-webkit-inner-spin-button{
     appearance: none;
 }
 .container-convertidor p{
@@ -273,6 +272,12 @@ body{
     background-color: var(--bgcolor-container-convert-p);
     grid-area: conversion;
 
+}
+.btn-convertir{
+    grid-area: btn-convertir;
+    border-radius: 0.5em;
+    border-style: none;
+    background-color: var(--bgcolor-button);
 }
 .footer-principal{
     grid-area: footer;

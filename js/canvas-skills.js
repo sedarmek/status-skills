@@ -65,6 +65,7 @@ Task:
             let btn_pausar = document.getElementById('cron-btn-pausar');
             let btn_reinicio = document.getElementById('cron-btn-reiniciar');
             let texto_CronTiempo = document.getElementById('cron-tiempo');
+            let btn_convertir = document.querySelector("#btn-convertir");
             //asignacion de valores guardados en cache.
             skill_1.value = storageSklValue_1;
             skill_2.value = storageSklValue_2;
@@ -245,11 +246,6 @@ Task:
     skill_5.addEventListener("keypress", (char) => {
         updateCanvas(skill_5, 'storageSkill_5', char);
     });
-    convertidor_minutes.addEventListener("keypress", (char) => {
-        if(char.keyCode === 13){
-        convertidor_decimals.innerHTML = minutesToHours(convertidor_minutes.value);
-        }
-    });
     
     btn_empezar.addEventListener("click", cronStart);
     btn_pausar.addEventListener("click", () => {
@@ -261,6 +257,14 @@ Task:
     });
     btn_reinicio.addEventListener("click", cronRestart);
 
+    convertidor_minutes.addEventListener("keypress", (char) => {
+        if(char.keyCode === 13){
+        convertidor_decimals.innerHTML = minutesToHours(convertidor_minutes.value);
+        }
+    });
+    btn_convertir.addEventListener("click", () => {
+        convertidor_decimals.innerHTML = minutesToHours(convertidor_minutes.value);
+    });
     drawSkillsBase();
     drawSkillsCurrent();
 }
