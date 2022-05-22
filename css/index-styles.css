@@ -142,7 +142,6 @@ body{
     left: 0;
 }
 .container-skills{
-    /* width: 100vw; */
     padding: 0 0.2em;
     display: grid;
     grid-gap: 1px;
@@ -155,11 +154,11 @@ body{
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-auto-flow: column;
 }
-.skill input{
+.skill-item{
     text-align: right;
     width: 3em;
     padding: 0.2em;
@@ -178,9 +177,11 @@ body{
     align-content: center;
     grid-auto-flow: column;
 }
+.btn-skill{
+    border-radius: 0.5em;
+    background-color: var(--bgcolor-button);
+}
 .aside-principal{
-    /* box-sizing: border-box; */
-    /* width: 100vw; */
     text-align: center;
     padding: 0.5em;
     background-color: var(--bgcolor-aside-principal);

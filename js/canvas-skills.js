@@ -59,6 +59,7 @@ Task:
             let texto_skill_3 = document.getElementById('p-input-3');
             let texto_skill_4 = document.getElementById('p-input-4');
             let texto_skill_5 = document.getElementById('p-input-5');
+            let btn_skill = document.getElementsByClassName('btn-skill');
             let convertidor_minutes = document.getElementById('convertidor-minutes');
             let convertidor_decimals = document.getElementById('convertidor-decimals');
             let btn_empezar = document.getElementById('cron-btn-empezar');
@@ -145,7 +146,7 @@ Task:
             ctx.fillStyle = '#8484B0';
             ctx.beginPath();
             ctx.clearRect(0,0,xCanvasMaxCurrent,yCanvasMaxCurrent);
-            ctx.lineTo(xCanvasCenterCurrent, sk1yConverted);//(1000-width)/2
+            ctx.lineTo(xCanvasCenterCurrent, sk1yConverted);//
             ctx.lineTo(sk2xConverted, yCanvasCenterCurrent);
             ctx.lineTo(sk3xConverted, sk3yConverted);//
             ctx.lineTo(sk4xConverted, sk4yConverted);//
@@ -180,18 +181,14 @@ Task:
         }
         return convertedDigit;
     }
-    //mensaje de actualizacion de horas/skill
-    function notifyUpdate(){
-        alert("Se actualizaron los datos exitosamente.");
-    }
     //actualizar canvas y guardar horas en cache
-    function updateCanvas(skillCurrent, storageSkillCurrent, ch){
-        if(ch.keyCode === 13){
-            if((parseInt(skillCurrent.value) >= parseInt(skillCurrent.min)) && (parseInt(skillCurrent.value) <= parseInt(skillCurrent.max))){
-                drawSkillsCurrent();
-                localStorage.setItem(storageSkillCurrent, skillCurrent.value);
-                alert("Se actualizaron los datos exitosamente.");
-            }
+    function updateCanvas(skillCurrent, storageSkillCurrent){
+        if((parseInt(skillCurrent.value) >= parseInt(skillCurrent.min)) && (parseInt(skillCurrent.value)<= parseInt(skillCurrent.max))){
+            drawSkillsCurrent();
+            localStorage.setItem(storageSkillCurrent, skillCurrent.value);
+            alert("Se actualizaron los datos exitosamente.");
+        }else{
+            alert("El valor esta fuera de rango, no se guardaran los datos.")
         }
     }
     //Inicia el cronometro
@@ -231,22 +228,46 @@ Task:
     }
     //listeners de inputs
     skill_1.addEventListener("keypress", (char) => {
-        updateCanvas(skill_1, 'storageSkill_1', char);
-        
+        if(char.keyCode === 13){
+            updateCanvas(skill_1, 'storageSkill_1');
+        }
     });
     skill_2.addEventListener("keypress", (char) => {
-        updateCanvas(skill_2, 'storageSkill_2', char);
+        if(char.keyCode === 13){
+            updateCanvas(skill_2, 'storageSkill_2');
+        }
     });
     skill_3.addEventListener("keypress", (char) => {
-        updateCanvas(skill_3, 'storageSkill_3', char);
+        if(char.keyCode === 13){
+            updateCanvas(skill_3, 'storageSkill_3');
+        }
     });
     skill_4.addEventListener("keypress", (char) => {
-        updateCanvas(skill_4, 'storageSkill_4', char);
+        if(char.keyCode === 13){
+            updateCanvas(skill_4, 'storageSkill_4');
+        }
     });
     skill_5.addEventListener("keypress", (char) => {
-        updateCanvas(skill_5, 'storageSkill_5', char);
+        if(char.keyCode === 13){
+            updateCanvas(skill_5, 'storageSkill_5');
+        }
     });
-    
+    btn_skill[0].addEventListener("click", () => {
+        updateCanvas(skill_1, 'storageSkill_1');
+    });
+    btn_skill[1].addEventListener("click", () => {
+        updateCanvas(skill_2, 'storageSkill_2');
+    });
+    btn_skill[2].addEventListener("click", () => {
+        updateCanvas(skill_3, 'storageSkill_3');
+    });
+    btn_skill[3].addEventListener("click", () => {
+        updateCanvas(skill_4, 'storageSkill_4');
+    });
+    btn_skill[4].addEventListener("click", () => {
+        updateCanvas(skill_5, 'storageSkill_5');
+    });
+
     btn_empezar.addEventListener("click", cronStart);
     btn_pausar.addEventListener("click", () => {
         clearInterval(idTemp);

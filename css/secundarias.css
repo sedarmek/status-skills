@@ -1,9 +1,17 @@
 :root{
-    --bgcolor-article: #3300ff18;
-    --bgcolor-article-li: #00000042;
-    --bgcolor-aside-article: #9000ff18;
-    --bgcolor-aside-article-li: #00000042;
+    --bgcolor-article: #262633;
+    --bgcolor-article-li: #545470;
+    --bgcolor-aside-article: #262633;
+    --bgcolor-aside-article-li: #545470;
 }
+/* .header-principal{
+    overflow: hidden;
+    max-width: 100vw;
+}
+.header-menu{
+    max-width: 100vw;
+
+} */
 .article-motivation{
     padding: 0.5em;
     background-color: var(--bgcolor-article);
@@ -11,10 +19,11 @@
     justify-content: center;
 }
 .article-motivation img{
-    width: 19rem;
+    width: 10rem;
 }
 .articles{
     padding: 1em;
+    width: 16em;
     background-color: var(--bgcolor-article);
     display: grid;
     justify-content: center;
