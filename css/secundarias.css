@@ -4,14 +4,6 @@
     --bgcolor-aside-article: #262633;
     --bgcolor-aside-article-li: #545470;
 }
-/* .header-principal{
-    overflow: hidden;
-    max-width: 100vw;
-}
-.header-menu{
-    max-width: 100vw;
-
-} */
 .article-motivation{
     padding: 0.5em;
     background-color: var(--bgcolor-article);
