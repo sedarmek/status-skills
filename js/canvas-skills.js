@@ -46,9 +46,17 @@ Task:
             let storageSklValue_3 = localStorage.getItem('storageSkill_3');
             let storageSklValue_4 = localStorage.getItem('storageSkill_4');
             let storageSklValue_5 = localStorage.getItem('storageSkill_5');
+            let storageSklName_1 = localStorage.getItem('storageSklName_1');
+            let storageSklName_2 = localStorage.getItem('storageSklName_2');
+            let storageSklName_3 = localStorage.getItem('storageSklName_3');
+            let storageSklName_4 = localStorage.getItem('storageSklName_4');
+            let storageSklName_5 = localStorage.getItem('storageSklName_5');
+
             //instancias de canvas, inputs, etc
             let canvas_base = document.getElementById('canvas-skills-base');
             let canvas = document.getElementById('canvas-skills-current');
+            let btn_skill_names = document.getElementsByClassName('skill-name-btn');
+            let skill_names = document.getElementsByClassName('skill-name');
             let skill_1 = document.getElementById('skill-1');
             let skill_2 = document.getElementById('skill-2');
             let skill_3 = document.getElementById('skill-3');
@@ -59,7 +67,7 @@ Task:
             let texto_skill_3 = document.getElementById('p-input-3');
             let texto_skill_4 = document.getElementById('p-input-4');
             let texto_skill_5 = document.getElementById('p-input-5');
-            let btn_skill = document.getElementsByClassName('btn-skill');
+            let btn_skill_save = document.getElementsByClassName('btn-skill');
             let convertidor_minutes = document.getElementById('convertidor-minutes');
             let convertidor_decimals = document.getElementById('convertidor-decimals');
             let btn_empezar = document.getElementById('cron-btn-empezar');
@@ -73,6 +81,11 @@ Task:
             skill_3.value = storageSklValue_3;
             skill_4.value = storageSklValue_4;
             skill_5.value = storageSklValue_5;
+            if(storageSklName_1) skill_names[0].innerHTML = storageSklName_1;
+            if(storageSklName_2) skill_names[1].innerHTML = storageSklName_2;
+            if(storageSklName_3) skill_names[2].innerHTML = storageSklName_3;
+            if(storageSklName_4) skill_names[3].innerHTML = storageSklName_4;
+            if(storageSklName_5) skill_names[4].innerHTML = storageSklName_5;
             //valores de canvas current para dimensiones maximas
             let lenghtCanvas = 250;
             canvas.width = lenghtCanvas;
@@ -191,6 +204,9 @@ Task:
             alert("El valor esta fuera de rango, no se guardaran los datos.")
         }
     }
+    //cambie el nombre del h3 del skill
+    function updateNameSkill(){
+    }
     //Inicia el cronometro
     let segundos = 0, minutos = 0, txtSec, txtMin, idTemp;
     function cronStart(){
@@ -227,6 +243,41 @@ Task:
         btn_empezar.value = "empezar";
     }
     //listeners de inputs
+    btn_skill_names[0].addEventListener('click', () => {
+        let newName = prompt('cual es el nuevo skill?');
+        if(newName) {
+            localStorage.setItem('storageSklName_1', newName);
+            skill_names[0].innerHTML = newName;
+        }
+    });
+    btn_skill_names[1].addEventListener('click', () => {
+        let newName = prompt('cual es el nuevo skill?');
+        if(newName) {
+            localStorage.setItem('storageSklName_2', newName);
+            skill_names[1].innerHTML = newName;
+        }
+    });
+    btn_skill_names[2].addEventListener('click', () => {
+        let newName = prompt('cual es el nuevo skill?');
+        if(newName) {
+            localStorage.setItem('storageSklName_3', newName);
+            skill_names[2].innerHTML = newName;
+        }
+    });
+    btn_skill_names[3].addEventListener('click', () => {
+        let newName = prompt('cual es el nuevo skill?');
+        if(newName) {
+            localStorage.setItem('storageSklName_4', newName);
+            skill_names[3].innerHTML = newName;
+        }
+    });
+    btn_skill_names[4].addEventListener('click', () => {
+        let newName = prompt('cual es el nuevo skill?');
+        if(newName) {
+            localStorage.setItem('storageSklName_5', newName);
+            skill_names[4].innerHTML = newName;
+        }
+    });
     skill_1.addEventListener("keypress", (char) => {
         if(char.keyCode === 13){
             updateCanvas(skill_1, 'storageSkill_1');
@@ -252,19 +303,19 @@ Task:
             updateCanvas(skill_5, 'storageSkill_5');
         }
     });
-    btn_skill[0].addEventListener("click", () => {
+    btn_skill_save[0].addEventListener("click", () => {
         updateCanvas(skill_1, 'storageSkill_1');
     });
-    btn_skill[1].addEventListener("click", () => {
+    btn_skill_save[1].addEventListener("click", () => {
         updateCanvas(skill_2, 'storageSkill_2');
     });
-    btn_skill[2].addEventListener("click", () => {
+    btn_skill_save[2].addEventListener("click", () => {
         updateCanvas(skill_3, 'storageSkill_3');
     });
-    btn_skill[3].addEventListener("click", () => {
+    btn_skill_save[3].addEventListener("click", () => {
         updateCanvas(skill_4, 'storageSkill_4');
     });
-    btn_skill[4].addEventListener("click", () => {
+    btn_skill_save[4].addEventListener("click", () => {
         updateCanvas(skill_5, 'storageSkill_5');
     });
 

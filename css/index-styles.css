@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 :root{
-    --bgcolor-body: #0000ff;
+    --bgcolor-body: transparent;
     --bgcolor-main-container: #363439;
     /* header */
     --bgcolor-header-principal: #1f2228;
@@ -140,15 +140,22 @@ body{
 }
 .skill{
     border-radius: 0.5em;
+    padding: 0.2em;
     background-color: var(--bgcolor-skill);
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: 4fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-auto-flow: column;
 }
-.skill-item{
+.skill-name-btn{
+    padding: 0.1em;
+    border-style: none;
+    border-radius: 0.5em;
+    background-color: var(--bgcolor-button);
+}
+.skill-hours{
     text-align: right;
     width: 3em;
     padding: 0.2em;
@@ -157,7 +164,7 @@ body{
     border: 2px solid #1e1e1ecd;
     background-color: var(--bgcolor-skill-input);
 }
-.skill input::-webkit-inner-spin-button{
+.skill-hours::-webkit-inner-spin-button{
     appearance: none;
 }
 .skill h3, .skill p{
@@ -168,6 +175,7 @@ body{
     grid-auto-flow: column;
 }
 .btn-skill{
+    border-style: none;
     border-radius: 0.5em;
     background-color: var(--bgcolor-button);
 }
