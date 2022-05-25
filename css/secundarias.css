@@ -1,8 +1,8 @@
 :root{
-    --bgcolor-article: #262633;
-    --bgcolor-article-li: #545470;
-    --bgcolor-aside-article: #262633;
-    --bgcolor-aside-article-li: #545470;
+    --bgcolor-article: #2B2F33;/*color oscuro 3*/
+    --bgcolor-article-li: #626A73;/*color base*/
+    --bgcolor-aside-article: #2B2F33;/*color oscuro 3*/
+    --bgcolor-aside-article-li: #626A73;/*color base*/
 }
 .article-motivation{
     padding: 0.5em;
