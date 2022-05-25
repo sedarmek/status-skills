@@ -2,28 +2,34 @@
 :root{
     --bgcolor-body: transparent;
     --bgcolor-main-container: #363439;
+    --color-oscuro1: #212326;
+    --color-oscuro2: #1E2124;
+    --color-oscuro3: #2B2F33;
+    --color-base: #626A73;
+    --color-claro: #98A5B3;
+    
     /* header */
-    --bgcolor-header-principal: #1f2228;
-    --bgcolor-header-menu: #545470;
-    --bgcolor-header-menu-li: #8484B0;
+    --bgcolor-header-principal: var(--color-oscuro1);/*color oscuro 1*/
+    --bgcolor-header-menu: var(--color-base);/*color base*/
+    --bgcolor-header-menu-li: var(--color-claro);/*color claro*/
     /* main */
-    --bgcolor-main-principal: #1b1b24;
-    --bgcolor-container-avatar: #262633;
+    --bgcolor-main-principal: var(--color-oscuro2);/*color oscuro 2*/
+    --bgcolor-container-avatar: var(--color-oscuro3);/*color oscuro 3*/
     --canvas-width: 10em;
     --canvas-height: 10em;
-    --bgcolor-skill: #262633;
-    --bgcolor-skill-input: #545470;
+    --bgcolor-skill: var(--color-oscuro3);/*color oscuro 3*/
+    --bgcolor-skill-input: var(--color-base);/*color base*/
     /* aside */
-    --bgcolor-aside-principal: #1b1b24;
-    --bgcolor-container-cron-h3: #262633;
-    --bgcolor-container-cron-p: #545470;
-    --bgcolor-button: #8484B0;
-    --bgcolor-container-convert: #545470;
-    --bgcolor-container-convert-h3: #262633;
-    --bgcolor-container-convert-input: #555185ca;
-    --bgcolor-container-convert-p: #545470;
+    --bgcolor-aside-principal: var(--color-oscuro2);/*color oscuro 2*/
+    --bgcolor-container-cron-h3: var(--color-oscuro3);/*color oscuro 3*/
+    --bgcolor-container-cron-p: var(--color-base);/*color base*/
+    --bgcolor-button: var(--color-claro);/*color claro*/
+    --bgcolor-container-convert: var(--color-base);/*color base*/
+    --bgcolor-container-convert-h3: var(--color-oscuro3);/*color oscuro 3*/
+    --bgcolor-container-convert-input: var(--color-base);/*color base*/
+    --bgcolor-container-convert-p: var(--color-base);/*color base*/
     /* footer */
-    --bgcolor-footer-principal: #1b1b24;
+    --bgcolor-footer-principal: var(--color-oscuro2);/*color oscuro 2*/
 }
 *{
     color: aliceblue;
