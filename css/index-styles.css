@@ -1,51 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 :root{
-    --bgcolor-body: transparent;
-    --bgcolor-main-container: #363439;
-    --color-oscuro1: #212326;
-    --color-oscuro2: #1E2124;
-    --color-oscuro3: #2B2F33;
-    --color-base: #626A73;
-    --color-claro: #98A5B3;
-    
-    /* header */
-    --bgcolor-header-principal: var(--color-oscuro1);/*color oscuro 1*/
-    --bgcolor-header-menu: var(--color-base);/*color base*/
-    --bgcolor-header-menu-li: var(--color-claro);/*color claro*/
-    /* main */
-    --bgcolor-main-principal: var(--color-oscuro2);/*color oscuro 2*/
-    --bgcolor-container-avatar: var(--color-oscuro3);/*color oscuro 3*/
     --canvas-width: 10em;
     --canvas-height: 10em;
-    --bgcolor-skill: var(--color-oscuro3);/*color oscuro 3*/
-    --bgcolor-skill-input: var(--color-base);/*color base*/
-    /* aside */
-    --bgcolor-aside-principal: var(--color-oscuro2);/*color oscuro 2*/
-    --bgcolor-container-cron-h3: var(--color-oscuro3);/*color oscuro 3*/
-    --bgcolor-container-cron-p: var(--color-base);/*color base*/
-    --bgcolor-button: var(--color-claro);/*color claro*/
-    --bgcolor-container-convert: var(--color-base);/*color base*/
-    --bgcolor-container-convert-h3: var(--color-oscuro3);/*color oscuro 3*/
-    --bgcolor-container-convert-input: var(--color-base);/*color base*/
-    --bgcolor-container-convert-p: var(--color-base);/*color base*/
-    /* footer */
-    --bgcolor-footer-principal: var(--color-oscuro2);/*color oscuro 2*/
+    --border-radius : 0.5em;/*usar*/
 }
 *{
     color: aliceblue;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
-}
-body{
-    background-color: var(--bgcolor-body);
 }
 
 .main-container{
     min-height: 100vh;
     margin: 0 auto;
-    background-color: var(--bgcolor-main-container);
     display: grid;
     grid-gap: 1px;
     grid-template-areas:
@@ -56,13 +24,11 @@ body{
 }
 .header-principal{
     text-align: center;
-    background-color: var(--bgcolor-header-principal);
     grid-area: header;
 }
 .header-menu{
     list-style: none;
     padding: 0.5em 0.5em;
-    background-color: var(--bgcolor-header-menu);
     display: grid;
     grid-gap: 0.5em;
     grid-auto-columns: 1fr;
@@ -70,12 +36,10 @@ body{
 }
 .header-menu li{
     padding: 0.2em;
-    background-color:  var(--bgcolor-header-menu-li);
 }
 .main-principal{
     text-align: center;
     padding: 1em 0;
-    background-color: var(--bgcolor-main-principal);
     grid-area: main;
     display: grid;
     grid-gap: 2em;
@@ -86,7 +50,6 @@ body{
     margin: 0 auto;
     padding: 1em;
     border-radius: 1em;
-    background-color: var(--bgcolor-container-avatar);
     display: grid;
     grid-template-areas: 
     "title"
@@ -147,7 +110,6 @@ body{
 .skill{
     border-radius: 0.5em;
     padding: 0.2em;
-    background-color: var(--bgcolor-skill);
     display: grid;
     justify-content: center;
     align-content: center;
@@ -159,7 +121,6 @@ body{
     padding: 0.1em;
     border-style: none;
     border-radius: 0.5em;
-    background-color: var(--bgcolor-button);
 }
 .skill-hours{
     text-align: right;
@@ -167,8 +128,6 @@ body{
     padding: 0.2em;
     margin: auto 0 auto auto;
     border-radius: 9px;
-    border: 2px solid #1e1e1ecd;
-    background-color: var(--bgcolor-skill-input);
 }
 .skill-hours::-webkit-inner-spin-button{
     appearance: none;
@@ -183,12 +142,10 @@ body{
 .btn-skill{
     border-style: none;
     border-radius: 0.5em;
-    background-color: var(--bgcolor-button);
 }
 .aside-principal{
     text-align: center;
     padding: 0.5em;
-    background-color: var(--bgcolor-aside-principal);
     grid-area: aside;
     display: grid;
     grid-gap: 0.5em;
@@ -200,7 +157,6 @@ body{
     width: 8em;
     height: 4em;
     border-radius: 1em;
-    background-color: var(--bgcolor-container-cron-p);
     display: grid;
     grid-auto-flow: row;
     grid-template-areas: 
@@ -211,7 +167,6 @@ body{
 .container-cronometro h3{
     grid-area: titulo;
     border-radius: 0.5em 0.5em 0 0;
-    background-color: var(--bgcolor-container-cron-h3);
 }
 .container-cronometro p{
     grid-area: tiempo;
@@ -222,29 +177,21 @@ body{
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
 }
-.container-buttons :nth-child(1){
+.container-buttons :nth-child(1),
+.container-buttons :nth-child(2),
+.container-buttons :nth-child(3){
     border-radius: 0.5em;
     border-style: none;
-    background-color: var(--bgcolor-button);
 }
-.container-buttons :nth-child(2){
-    display: none;
-    border-radius: 0.5em;
-    border-style: none;
-    background-color: var(--bgcolor-button);
-}
+.container-buttons :nth-child(2),
 .container-buttons :nth-child(3){
     display: none;
-    border-radius: 0.5em;
-    border-style: none;
-    background-color: var(--bgcolor-button);
 }
 .container-convertidor{
     overflow: hidden;
     width: 8em;
     height: 4em;
     border-radius: 0.5em;
-    background-color: var(--bgcolor-container-convert);
     display: grid;
     grid-template-areas:
     "titulo titulo"
@@ -253,7 +200,6 @@ body{
     grid-auto-flow: row;
 }
 .container-convertidor h3{
-    background-color: var(--bgcolor-container-convert-h3);
     grid-area: titulo;
 }
 .convertidor-minutes{
@@ -264,7 +210,6 @@ body{
     margin: auto 0 auto auto;
     border: 1px solid white;
     border-radius: 1em;
-    background-color: var(--bgcolor-container-convert-input);
 }
 .convertidor-minutes::-webkit-inner-spin-button{
     appearance: none;
@@ -274,7 +219,6 @@ body{
     margin: auto;/*necesario para altura de input*/
     border: 1px solid white;
     border-radius: 0.3em;
-    background-color: var(--bgcolor-container-convert-p);
     grid-area: conversion;
 
 }
@@ -282,12 +226,9 @@ body{
     grid-area: btn-convertir;
     border-radius: 0.5em;
     border-style: none;
-    background-color: var(--bgcolor-button);
 }
 .footer-principal{
     grid-area: footer;
-    /* width: 100vw; */
-    background-color: var(--bgcolor-footer-principal);
     display: grid;
     justify-content: center;
     align-content: center;
