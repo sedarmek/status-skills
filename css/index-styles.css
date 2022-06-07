@@ -7,6 +7,7 @@
 *{
     color: aliceblue;
     font-family: 'Roboto', sans-serif;
+    font-weight: 600;
     margin: 0;
     padding: 0;
 }
@@ -45,6 +46,24 @@
     grid-gap: 2em;
     justify-content: center;
     align-content: center;
+}
+.themes-container{
+    position: fixed;
+    right: 0;
+}
+.theme-dark,
+.theme-light{
+    background-color: #52a5dcaf;
+    border: 2px solid rgba(220, 220, 220, 0.363);
+    border-radius: 0.5em;
+}
+.theme-dark{
+    display: none;
+}
+.theme-dark i,
+.theme-light i{
+    font-size:2em;
+    color: black;
 }
 .container-avatar{
     margin: 0 auto;

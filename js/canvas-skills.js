@@ -76,11 +76,11 @@ Task:
             let texto_CronTiempo = document.getElementById('cron-tiempo');
             let btn_convertir = document.querySelector("#btn-convertir");
             //asignacion de valores guardados en cache.
-            skill_1.value = storageSklValue_1;
-            skill_2.value = storageSklValue_2;
-            skill_3.value = storageSklValue_3;
-            skill_4.value = storageSklValue_4;
-            skill_5.value = storageSklValue_5;
+            skill_1.value = storageSklValue_1 ?? 0;
+            skill_2.value = storageSklValue_2 ?? 0;
+            skill_3.value = storageSklValue_3 ?? 0;
+            skill_4.value = storageSklValue_4 ?? 0;
+            skill_5.value = storageSklValue_5 ?? 0;
             if(storageSklName_1) skill_names[0].innerHTML = storageSklName_1;
             if(storageSklName_2) skill_names[1].innerHTML = storageSklName_2;
             if(storageSklName_3) skill_names[2].innerHTML = storageSklName_3;
@@ -337,6 +337,21 @@ Task:
     btn_convertir.addEventListener("click", () => {
         convertidor_decimals.innerHTML = minutesToHours(convertidor_minutes.value);
     });
+    let btnThemeDark = document.querySelector('.theme-dark');
+    let btnThemeLight = document.querySelector('.theme-light');
+
+    btnThemeDark.addEventListener('click', ()=> {
+        document.querySelector('.theme-loaded').setAttribute('href', './css/themes/dark.css');
+        btnThemeLight.style.display = "block";
+        btnThemeDark.style.display = "none";
+
+    });
+    btnThemeLight.addEventListener('click', ()=> {
+        document.querySelector('.theme-loaded').setAttribute('href', './css/themes/light.css');
+        btnThemeLight.style.display = "none";
+        btnThemeDark.style.display = "block";
+    });
+
     drawSkillsBase();
     drawSkillsCurrent();
 }
