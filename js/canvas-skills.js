@@ -1,41 +1,8 @@
-/*
-hacer un pentagono para las skills:
-    1.crear canvas en html con medidas.
-    2.crear variable(canvas) para regresar el nodo dom para el elemento canvas con metodo document.getElementById('id').
-    3.crear variable(ctx) para acceder al contexto de renderizacion con metodo canvas.getContext('2d').
-    4.comprobar soporte
-    5.dibujar:
-        fillRect(x, y, width, height)
-        strokeRect(x, y, width, height)
-        clearRect(x, y, width, height)
-        beginPath()
-        closePath()
-        stroke()
-        fill()
-        moveTo(x, y)
-        lineTo(x, y)
-        rect(x, y, width, height)
-        arc(x, y, radius, startAngle, endAngle, anticlockwise)
-        quadraticCurveTo(cp1x, cp1y, x, y)
-        bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)
-        
 
-        notas: radians = (Math.PI/180)*degrees
-*/
-/*
-Guardar valor de input en cache
-    1.Usar api de almacenamiento web
-    2.Usar estructura de localStorage.
-    3.Usar metodo Storage.setItem() para guardar elementos de datos en el almacenamiento.
-    4.Usar metodo Storage.getItem() para tomar el parametro en una variable.
-*/
 /*
 Task:
-    a. anadir paginas secundarias para cada skill o mejorar e incrementar las caracteristicas en la pagina principal
-    b. aside:
-        1.anadir cronometro
-        2.anadir convertidor de minutos a decimales
-    c. poder arrastrar una imagen y guardarla, dentro de motivacion para cada pagina secundaria en skills
+    *.
+    *. poder arrastrar una imagen y guardarla, dentro de motivacion para cada pagina secundaria en skills
 
 */
 'use strict'
@@ -350,6 +317,7 @@ Task:
         document.querySelector('.theme-loaded').setAttribute('href', './css/themes/light.css');
         btnThemeLight.style.display = "none";
         btnThemeDark.style.display = "block";
+        console.log('funciona')
     });
 
     drawSkillsBase();
