@@ -38,7 +38,7 @@ body{
     background-color: var(--bgcolor-button);
 }
 .skill-hours{
-    border: 2px solid #1e1e1ecd;
+    border: 2px solid var(--color-claro);
     background-color: var(--color-base);
 }
 .btn-skill{
@@ -75,5 +75,5 @@ body{
     background-color: var(--bgcolor-button);
 }
 .footer-principal{
-    background-color: var(--color-oscuro2);
+    background-color: var(--color-oscuro1);
 }

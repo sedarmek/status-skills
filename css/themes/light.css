@@ -17,7 +17,7 @@
 .container-canvas-name-skills :nth-child(3),
 .container-canvas-name-skills :nth-child(4),
 .container-canvas-name-skills :nth-child(5){
-    color: white;
+    color: #fff
 }
 body{
     background-color: var(--bgcolor-body);
@@ -47,7 +47,7 @@ body{
     background-color: var(--bgcolor-button);
 }
 .skill-hours{
-    border: 2px solid #1e1e1ecd;
+    border: 2px solid var(--color-claro);
     background-color: var(--color-base);
 }
 .btn-skill{

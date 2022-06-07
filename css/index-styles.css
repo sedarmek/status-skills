@@ -92,7 +92,7 @@
 }
 .container-canvas-name-skills h2{
     font-size: .75em;
-    text-shadow: 0 0 2px #ccc;
+    text-shadow: 0 0 0.8em #000;
     height: 1em;
     width: auto;
     margin: auto;/*El valor 'auto' es necesario para centrar.*/
