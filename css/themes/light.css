@@ -13,6 +13,13 @@
 *{
     color: black;
 }
+.container-canvas-name-skills :first-child,
+.container-canvas-name-skills :nth-child(2),
+.container-canvas-name-skills :nth-child(3),
+.container-canvas-name-skills :nth-child(4),
+.container-canvas-name-skills :nth-child(5){
+    color: white;
+}
 body{
     background-color: var(--bgcolor-body);
 }

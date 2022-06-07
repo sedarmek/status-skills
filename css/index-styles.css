@@ -55,7 +55,7 @@
 .theme-light{
     background-color: #52a5dcaf;
     border: 2px solid rgba(220, 220, 220, 0.363);
-    border-radius: 0.5em;
+    border-radius: 0.5em 0 0 0.5em;
 }
 .theme-dark{
     display: none;
@@ -63,7 +63,7 @@
 .theme-dark i,
 .theme-light i{
     font-size:2em;
-    color: black;
+    color: #ccc;
 }
 .container-avatar{
     margin: 0 auto;
@@ -91,7 +91,8 @@
     grid-area: img;
 }
 .container-canvas-name-skills h2{
-    font-size: 0.5em;
+    font-size: .75em;
+    text-shadow: 0 0 2px #ccc;
     height: 1em;
     width: auto;
     margin: auto;/*El valor 'auto' es necesario para centrar.*/
