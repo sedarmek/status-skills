@@ -30,6 +30,15 @@ body .main-container .main-principal {
 body .main-container .main-principal .container-avatar {
   background-color: var(--color-oscuro3);
 }
+body .main-container .main-principal .article-motivation {
+  background-color: var(--color-oscuro3);
+}
+body .main-container .main-principal .articles {
+  background-color: var(--color-oscuro3);
+}
+body .main-container .main-principal .articles li {
+  background-color: var(--color-base);
+}
 body .main-container .main-principal .skill {
   background-color: var(--color-oscuro3);
 }
@@ -45,6 +54,12 @@ body .main-container .main-principal .skill .btn-skill {
 }
 body .main-container .aside-principal {
   background-color: var(--color-oscuro2);
+}
+body .main-container .aside-principal .aside-article {
+  background-color: var(--color-oscuro3);
+}
+body .main-container .aside-principal .aside-article li {
+  background-color: var(--color-base);
 }
 body .main-container .aside-principal .container-cronometro {
   background-color: var(--color-base);

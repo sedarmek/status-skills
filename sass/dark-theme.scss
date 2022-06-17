@@ -30,6 +30,15 @@ body{
             .container-avatar{
                 background-color: var(--color-oscuro3);
             }
+            .article-motivation{
+                background-color: var(--color-oscuro3);
+            }
+            .articles{
+                background-color: var(--color-oscuro3);
+                li{
+                    background-color: var(--color-base);
+                }
+            }
             .skill{
                 background-color: var(--color-oscuro3);
                 .skill-name-btn{
@@ -47,7 +56,12 @@ body{
         //contenido aside
         .aside-principal{
             background-color: var(--color-oscuro2);
-            
+            .aside-article{
+                background-color: var(--color-oscuro3);
+                li{
+                    background-color: var(--color-base);
+                }
+            }
             .container-cronometro{
                 background-color: var(--color-base);
                 h3{

@@ -28,9 +28,21 @@ body{
         }
         //contenido central
         .main-principal{
-            background-color: var(--color-oscuro2);
+            background-color: var(--color-base);
             .container-avatar{
                 background-color: var(--color-oscuro3);
+                .container-canvas-name-skills h2{
+                    color: white;
+                }
+            }
+            .article-motivation{
+                background-color: var(--color-oscuro3);
+            }
+            .articles{
+                background-color: var(--color-oscuro3);
+                li{
+                    background-color: var(--color-oscuro2);
+                }
             }
             .skill{
                 background-color: var(--color-oscuro3);
@@ -48,8 +60,13 @@ body{
         }
         //contenido aside
         .aside-principal{
-            background-color: var(--color-oscuro2);
-            
+            background-color: var(--color-base);
+            .aside-article{
+                background-color: var(--color-oscuro3);
+                li{
+                    background-color: var(--color-oscuro2);
+                }
+            }
             .container-cronometro{
                 background-color: var(--color-base);
                 h3{
@@ -85,4 +102,3 @@ body{
         }
     }
 }
-
