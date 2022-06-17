@@ -21,7 +21,7 @@ body .main-container .header-principal {
 body .main-container .header-principal .header-menu {
   background-color: var(--color-base);
 }
-body .main-container .header-principal .header-menu .header-menu li {
+body .main-container .header-principal .header-menu li {
   background-color: var(--color-claro);
 }
 body .main-container .main-principal {
@@ -49,7 +49,7 @@ body .main-container .aside-principal {
 body .main-container .aside-principal .container-cronometro {
   background-color: var(--color-base);
 }
-body .main-container .aside-principal .container-cronometro .container-cronometro h3 {
+body .main-container .aside-principal .container-cronometro h3 {
   background-color: var(--color-oscuro3);
 }
 body .main-container .aside-principal .container-cronometro .container-buttons :nth-child(1),
@@ -60,13 +60,13 @@ body .main-container .aside-principal .container-cronometro .container-buttons :
 body .main-container .aside-principal .container-convertidor {
   background-color: var(--color-base);
 }
-body .main-container .aside-principal .container-convertidor .container-convertidor h3 {
+body .main-container .aside-principal .container-convertidor h3 {
   background-color: var(--color-oscuro3);
 }
 body .main-container .aside-principal .container-convertidor .convertidor-minutes {
   background-color: var(--color-base);
 }
-body .main-container .aside-principal .container-convertidor .container-convertidor p {
+body .main-container .aside-principal .container-convertidor p {
   background-color: var(--color-base);
 }
 body .main-container .aside-principal .container-convertidor .btn-convertir {

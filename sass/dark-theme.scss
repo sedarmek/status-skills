@@ -19,7 +19,7 @@ body{
             background-color: var(--color-oscuro1);
             .header-menu{
                 background-color: var(--color-base);
-                .header-menu li{
+                li{
                 background-color:  var(--color-claro);
                 }
             }
@@ -50,7 +50,7 @@ body{
             
             .container-cronometro{
                 background-color: var(--color-base);
-                .container-cronometro h3{
+                h3{
                     background-color: var(--color-oscuro3);
                 }
                 .container-buttons :nth-child(1),
@@ -62,13 +62,13 @@ body{
         
             .container-convertidor{
                 background-color: var(--color-base);
-                .container-convertidor h3{
+                h3{
                     background-color: var(--color-oscuro3);
                 }
                 .convertidor-minutes{
                     background-color: var(--color-base);
                 }
-                .container-convertidor p{
+                p{
                     background-color: var(--color-base);
                 
                 }
