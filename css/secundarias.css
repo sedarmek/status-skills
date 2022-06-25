@@ -9,7 +9,7 @@
 }
 .articles{
     padding: 1em;
-    width: 16em;
+    min-width: 16em;
     display: grid;
     justify-content: center;
 }

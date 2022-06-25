@@ -5,7 +5,7 @@ window.onload = () => {
     let btnThemeLight = document.querySelector('.theme-light');
     
     btnThemeDark.addEventListener('click', ()=> {
-        document.querySelector('.theme-loaded').setAttribute('href', '../css/themes/dark.css');
+        document.querySelector('.theme-loaded').setAttribute('href', '../css/themes/dark-theme.css');
         btnThemeLight.style.display = "block";
         btnThemeDark.style.display = "none";
         
