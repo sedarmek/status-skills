@@ -17,4 +17,5 @@ window.onload = () => {
         console.log('funciona')
     });
     console.log('funcionarax')
+    
 };
