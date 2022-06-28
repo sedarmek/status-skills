@@ -1,0 +1,14 @@
+{
+  "name": "seda",
+  "version": "1.0.0",
+  "main": "canvas-skills.js",
+  "repository": "https://github.com/sedarmek/status-skills.git",
+  "author": "Sergio <sdajinvers@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^28.1.1"
+  },
+    "scripts":{
+      "test": "jest"
+    }
+  }
