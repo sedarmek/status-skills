@@ -46,6 +46,12 @@ body .main-container .main-principal .articles {
 body .main-container .main-principal .articles li {
   background-color: var(--color-oscuro2);
 }
+body .main-container .main-principal .articles .article-notes {
+  background-color: var(--color-oscuro2);
+}
+body .main-container .main-principal .articles .notes-button {
+  background-color: var(--bgcolor-button);
+}
 body .main-container .main-principal .skill {
   background-color: var(--color-oscuro3);
 }
