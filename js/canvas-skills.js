@@ -85,6 +85,9 @@ Task:
             let yCanvasMaxCurrent = canvas.height;
             let xCanvasCenterCurrent = xCanvasMaxCurrent/2;
             let yCanvasCenterCurrent = yCanvasMaxCurrent/2;
+            //contexto del cronometro
+            let segundos = 0, minutos = 0, txtSec, txtMin, idTemp;
+
 
     //dibuja el canvas base: pentagono y lineas
     function drawSkillsBase(){
@@ -175,7 +178,6 @@ Task:
     function updateNameSkill(){
     }
     //Inicia el cronometro
-    let segundos = 0, minutos = 0, txtSec, txtMin, idTemp;
     function cronStart(){
         btn_pausar.style.display = "block";
         btn_reinicio.style.display = "block"

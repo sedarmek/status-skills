@@ -14,8 +14,6 @@ window.onload = () => {
         document.querySelector('.theme-loaded').setAttribute('href', '../css/themes/light-theme.css');
         btnThemeLight.style.display = "none";
         btnThemeDark.style.display = "block";
-        console.log('funciona')
     });
-    console.log('funcionarax')
     
 };
