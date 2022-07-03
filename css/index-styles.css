@@ -139,9 +139,12 @@
     grid-auto-flow: column;
 }
 .skill-name-btn{
+    display: inline-block;
+    font-size: 1.5em;
     padding: 0.1em;
-    border-style: none;
-    border-radius: 0.5em;
+    /* line-height: 1.5em; */
+    width: 1.5em;
+    border-radius: 0.3em;
 }
 .skill-hours{
     text-align: right;
@@ -161,8 +164,13 @@
     grid-auto-flow: column;
 }
 .btn-skill{
-    border-style: none;
-    border-radius: 0.5em;
+    display: inline-block;
+    font-size: 1.5em;
+    margin-left: 0.5em;
+    padding: 0.1em;
+    /* line-height: 1.5em; */
+    width: 1.5em;
+    border-radius: 0.3em;
 }
 .article-notes{
     padding: 1em;
