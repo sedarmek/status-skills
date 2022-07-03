@@ -62,7 +62,7 @@ body .main-container .main-principal .skill .skill-hours {
   border: 2px solid var(--color-claro);
   background-color: var(--color-base);
 }
-body .main-container .main-principal .skill .btn-skill {
+body .main-container .main-principal .btn-skill {
   background-color: var(--bgcolor-button);
 }
 body .main-container .aside-principal {
