@@ -15,6 +15,7 @@ window.onload = () => {
         document.querySelector('.theme-loaded').setAttribute('href', '../css/themes/dark-theme.css');
         btnThemeLight.style.display = "block";
         btnThemeDark.style.display = "none";
+        console.log('funciona')
         
     });
     btnThemeLight.addEventListener('click', ()=> {
