@@ -12,99 +12,93 @@
 *{
     color: black;
 }
-body{
-    background-color: var(--bgcolor-body);
-    .main-container{
-        background-color: var(--bgcolor-main-container);
-        //header
-        .header-principal{
-            background-color: var(--color-oscuro1);
-            .header-menu{
-                background-color: var(--color-base);
-                li{
-                background-color:  var(--color-claro);
-                }
-            }
-        }
-        //contenido central
-        .main-principal{
-            background-color: var(--color-base);
-            .container-avatar{
-                background-color: var(--color-oscuro3);
-                .container-canvas-name-skills h2{
-                    color: white;
-                }
-            }
-            .article-motivation{
-                background-color: var(--color-oscuro3);
-            }
-            .articles{
-                background-color: var(--color-oscuro3);
-                li{
-                    background-color: var(--color-oscuro2);
-                }
-                .article-notes{
-                    background-color: var(--color-oscuro2);
-                }
-                .notes-button{
-                    background-color: var(--bgcolor-button);
-                }
-            }
-            .skill{
-                background-color: var(--color-oscuro3);
-                .skill-name-btn{
-                    background-color: var(--bgcolor-button);
-                }
-                .skill-hours{
-                    border: 2px solid var(--color-claro);
-                    background-color: var(--color-base);
-                }
-            }
-            .btn-skill{
-                background-color: var(--bgcolor-button);
-            }
-        }
-        //contenido aside
-        .aside-principal{
-            background-color: var(--color-base);
-            .aside-article{
-                background-color: var(--color-oscuro3);
-                li{
-                    background-color: var(--color-oscuro2);
-                }
-            }
-            .container-cronometro{
-                background-color: var(--color-base);
-                h3{
-                    background-color: var(--color-oscuro3);
-                }
-                .container-buttons :nth-child(1),
-                .container-buttons :nth-child(2),
-                .container-buttons :nth-child(3){
-                    background-color: var(--bgcolor-button);
-                }
-            }
-        
-            .container-convertidor{
-                background-color: var(--color-base);
-                h3{
-                    background-color: var(--color-oscuro3);
-                }
-                .convertidor-minutes{
-                    background-color: var(--color-base);
-                }
-                p{
-                    background-color: var(--color-base);
-                
-                }
-                .btn-convertir{
-                    background-color: var(--bgcolor-button);
-                }
-            }
-        }
-        //footer
-        .footer-principal{
-            background-color: var(--color-oscuro1);
+//header
+.header-principal{
+    background-color: var(--color-oscuro1);
+    .header-menu{
+        background-color: var(--color-base);
+        li{
+        background-color:  var(--color-claro);
         }
     }
+}
+//contenido central
+.main-principal{
+    background-color: var(--color-base);
+    .container-avatar{
+        background-color: var(--color-oscuro3);
+        .container-canvas-name-skills h2{
+            color: white;
+        }
+    }
+    .article-motivation{
+        background-color: var(--color-oscuro3);
+    }
+    .articles{
+        background-color: var(--color-oscuro3);
+        li{
+            background-color: var(--color-oscuro2);
+        }
+        .article-notes{
+            background-color: var(--color-oscuro2);
+        }
+        .notes-button{
+            background-color: var(--bgcolor-button);
+        }
+    }
+    .skill{
+        background-color: var(--color-oscuro3);
+        .skill-name-btn{
+            background-color: var(--bgcolor-button);
+        }
+        .skill-hours{
+            border: 2px solid var(--color-claro);
+            background-color: var(--color-base);
+        }
+    }
+    .btn-skill{
+        background-color: var(--bgcolor-button);
+    }
+}
+//contenido aside
+.aside-principal{
+    background-color: var(--color-base);
+    .aside-article{
+        background-color: var(--color-oscuro3);
+        li{
+            background-color: var(--color-oscuro2);
+        }
+    }
+    .container-cronometro{
+        background-color: var(--color-base);
+        h3{
+            background-color: var(--color-oscuro3);
+        }
+        .container-buttons :nth-child(1),
+        .container-buttons :nth-child(2),
+        .container-buttons :nth-child(3){
+            background-color: var(--bgcolor-button);
+        }
+    }
+
+    .container-convertidor{
+        background-color: var(--color-base);
+        h3{
+            background-color: var(--color-oscuro3);
+        }
+        .convertidor-minutes{
+            background-color: var(--color-base);
+        }
+        p{
+            background-color: var(--color-base);
+        
+        }
+        .btn-convertir{
+            background-color: var(--bgcolor-button);
+        }
+    }
+}
+//footer
+.footer-principal{
+    background-color: var(--color-oscuro1);
 }

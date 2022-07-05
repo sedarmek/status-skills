@@ -6,78 +6,265 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index-styles.css">
     <link rel="stylesheet" href="./css/themes/dark-theme.css" class="theme-loaded">
+    <!-- <script src="./js/notes.js"></script> -->
     <script src="./js/canvas-skills.js"></script>
     <script src="https://kit.fontawesome.com/6fed4177e5.js" crossorigin="anonymous"></script>
-    <title>Personal Status</title>
+    <title>Habilidades</title>
 </head>
 <body>
     <div class="main-container">
         <header class="header-principal">
-            <h1>Skills</h1>
-            <ul class="header-menu">
-                <li><a href="./html/ingles.html">Ingles</a></li>
-                <li><a href="./html/ejercicio.html">Ejercicio</a></li>
-                <li><a href="./html/programacion.html">Programacion</a></li>
-                <li><a href="./html/dibujo.html">Dibujo</a></li>
-                <li><a href="./html/piano.html">Piano</a></li>
-            </ul>
+            <h1>Habilidades</h1>
         </header>
         <main class="main-principal">
             <div class="themes-container">
                 <div class="theme-dark"><i class="fa-solid fa-moon"></i></div>
                 <div class="theme-light"><i class="fa-solid fa-sun"></i></div>
             </div>
-            <h2>Status</h2>
-            <div class="container-avatar">
-                <h3>Avatar</h3>
+            <section class="container-avatar">
                 <canvas class="canvas-skills-base" id="canvas-skills-base" width="1000px" height="1000px">
                 </canvas>
                 <canvas class="canvas-skills-current" id="canvas-skills-current" width="250px" height="250px"></canvas>
                 <div class="container-canvas-name-skills">
-                    <h2>Ingles</h2>
-                    <h2>Ejercicio</h2>
-                    <h2>Programacion</h2>
-                    <h2>Dibujo</h2>
-                    <h2>Piano</h2>
+                    <h2>Skill 1</h2>
+                    <h2>Skill 2</h2>
+                    <h2>Skill 3</h2>
+                    <h2>Skill 4</h2>
+                    <h2>Skill 5</h2>
                 </div>
-            </div>
-            <div class="container-skills">
-                <div class="skill">
-                    <i class="fa-solid fa-pen skill-name-btn"></i>
-                    <h3 class="skill-name">ingles</h3>
-                    <input type="number" class="skill-hours" id="skill-1" min="0" max="1000">
-                    <p id="p-input-1"></p>
-                    <i class="fa-solid fa-floppy-disk btn-skill"></i>
-                </div>
-                <div class="skill">
-                    <i class="fa-solid fa-pen skill-name-btn"></i>
-                    <h3 class="skill-name">ejercicio</h3>
-                    <input type="number" class="skill-hours" id="skill-2" min="0" max="1000">
-                    <p id="p-input-2"></p>
-                    <i class="fa-solid fa-floppy-disk btn-skill"></i>
-                </div>
-                <div class="skill">
-                    <i class="fa-solid fa-pen skill-name-btn"></i>
-                    <h3 class="skill-name">programacion</h3>
-                    <input type="number" class="skill-hours" id="skill-3" min="0" max="1000">
-                    <p id="p-input-3"></p>
-                    <i class="fa-solid fa-floppy-disk btn-skill"></i>
-                </div>
-                <div class="skill">
-                    <i class="fa-solid fa-pen skill-name-btn"></i>
-                    <h3 class="skill-name">dibujo</h3>
-                    <input type="number" class="skill-hours" id="skill-4" min="0" max="1000">
-                    <p id="p-input-4"></p>
-                    <i class="fa-solid fa-floppy-disk btn-skill"></i>
-                </div>
-                <div class="skill">
-                    <i class="fa-solid fa-pen skill-name-btn"></i>
-                    <h3 class="skill-name">piano</h3>
-                    <input type="number" class="skill-hours" id="skill-5" min="0" max="1000">
-                    <p id="p-input-5"></p>
-                    <i class="fa-solid fa-floppy-disk btn-skill"></i>
-                </div>
-            </div>
+            </section>
+            <section class="container-skills">
+                <article class="container_skill">
+                    <section class="skill">
+                        <i class="fa-solid fa-pen skill-name-btn"></i>
+                        <h3 class="skill-name">skill 1</h3>
+                        <input type="number" class="skill-hours" id="skill-1" min="0" max="1000">
+                        <p id="p-input-1"></p>
+                        <i class="fa-solid fa-floppy-disk btn-skill"></i>
+                    </section>
+                    <section class="acordeon_skill" id="container_infoSkill1">
+                        <a href="#container_infoSkill1">Mas informacion</a>
+                        <article class="information_skill">
+                            <article class="information_central">
+                                <section class="information_section">
+                                    <h2>Plan de estudio</h2>
+                                    <ol>
+                                        <li>Aprender ingles conversacional</li>
+                                        <li>Aprender ingles tecnico</li>
+                                        <li>Aprender ingles para programacion</li>
+                                    </ol>
+                                </section>
+                                <section class="information_section">
+                                    <h2>Notas</h2>
+                                    <textarea name="notas" class="article-notes" id="notes_skillOne"></textarea>
+                                    <i class="fa-solid fa-floppy-disk btn-skill notes-button" id="bton_notesSkillOne"></i>
+                                </section>
+                            </article>
+                            <aside class="information_aside">
+                                <h2>Cursos</h2>
+                                <ol>
+                                    <li><a href="https://student.openenglish.com/">Open English</a></li>
+                                    <li><a href="https://www.duolingo.com/learn" target="_blank">duolingo</a></li>
+                                    <li><a href="https://www.busuu.com/dashboard#/timeline" target="_blank">busuu</a></li>
+                                    <li><a href="https://www.englishclass101.com/lesson-library/beginner" target="_blank">ingles101</a></li>
+                                    <li><a href="https://www.curso-ingles.com/aprender/cursos/ingles-negocios" target="_blank">Curso ingles</a></li>
+                                </ol>
+                            </aside>
+                        </article>
+                    </section>
+                </article>
+                <article class="container_skill">
+                    <section class="skill">
+                        <i class="fa-solid fa-pen skill-name-btn"></i>
+                        <h3 class="skill-name">skill 2</h3>
+                        <input type="number" class="skill-hours" id="skill-2" min="0" max="1000">
+                        <p id="p-input-2"></p>
+                        <i class="fa-solid fa-floppy-disk btn-skill"></i>
+                    </section>
+                    <section class="acordeon_skill" id="container_infoSkill2">
+                        <a href="#container_infoSkill2">Mas informacion</a>
+                        <article class="information_skill">
+                            <article class="information_central">
+                                <section class="information_section">
+                                    <h2>Rutina</h2>
+                                    <ol>
+                                        <li>lunes: pecho y triceps
+                                            <ul>
+                                                <li>flexiones: 12/4</li>
+                                                <li>flexiones invertidas: 12/4</li>
+                                            </ul>
+                                        </li>
+                                        <li>martes: espalda y biceps
+                                            <ul>
+                                                <li>remo: 12/4</li>
+                                                <li>mancuerna: 12/4</li>
+                                            </ul>
+                                        </li>
+                                        <li>jueves: piernas
+                                            <ul>
+                                                <li>sentadillas: 24/4</li>
+                                            </ul>
+                                        </li>
+                                        <li>viernes: hombros y trapecio
+                                            <ul>
+                                                <li>hombro: 12/4</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </section>
+                                <section class="information_section">
+                                    <h2>Alimentacion</h2>
+                                    <ul class="tabla-horizontal">
+                                        <li>comida</li>
+                                        <li>proteinas</li>
+                                        <li>desayuno: avena(150g), yogurth griego, platanos</li>
+                                        <li>10g</li>
+                                        <li>almuerzo: 4 huevos</li>
+                                        <li>25g</li>
+                                        <li>comida: pollo/bisteck(250g) con arroz</li>
+                                        <li>60g</li>
+                                        <li>cena: lonches con papa</li>
+                                        <li>10g</li>
+                                        <li>total:</li>
+                                        <li>105g</li>
+                                    </ul>
+                                </section>
+                                <section class="information_section">
+                                    <h2>Notas</h2>
+                                    <textarea name="notas" class="article-notes" id="notes_skillTwo"></textarea>
+                                    <i class="fa-solid fa-floppy-disk btn-skill notes-button" id="bton_notesSkillTwo"></i>
+                                </section>
+                            </article>
+                            <aside class="information_aside">
+                                <h2>Referencias</h2>
+                                <ol>
+                                    <li><a href="https://youtu.be/0i1Njzz3a64"  target="_blank">Video</a></li>
+                                </ol>
+                            </aside>
+                        </article>
+                    </section>
+                </article>
+                <article class="container_skill">
+                    <section class="skill">
+                        <i class="fa-solid fa-pen skill-name-btn"></i>
+                        <h3 class="skill-name">skill 3</h3>
+                        <input type="number" class="skill-hours" id="skill-3" min="0" max="1000">
+                        <p id="p-input-3"></p>
+                        <i class="fa-solid fa-floppy-disk btn-skill"></i>
+                    </section>
+                    <section class="acordeon_skill" id="container_infoSkill3">
+                        <a href="#container_infoSkill3">Mas informacion</a>
+                        <article class="information_skill">
+                            <article class="information_central">
+                                <section class="information_section">
+                                    <h2>Plan de estudio</h2>
+                                    <ol>
+                                        <li>aprender html y css</li>
+                                        <li>aprender javascript</li>
+                                        <li>aprender git y github</li>
+                                        <li>aprender mysql</li>
+                                        <li>aprender frameworks</li>
+                                        <li>aprender mongodb</li>
+                                        <li>node js</li>
+                                        <li>react native</li>
+                                        <li>kotlin</li>
+                                        <li>estudiar ingenieria de software
+                                            <ol>
+                                                <li>estructura de datos</li>
+                                                <li>patrones de diseno</li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </section>
+                                <section class="information_section">
+                                    <h2>Notas</h2>
+                                    <textarea name="notas" class="article-notes" id="notes_skillThree"></textarea>
+                                    <i class="fa-solid fa-floppy-disk btn-skill notes-button" id="bton_notesSkillThree"></i>
+                                </section>
+                            </article>
+                            <aside class="information_aside">
+                                <h2>Cursos</h2>
+                                <ol>
+                                    <li><a href="https://www.coursera.org/learn/technical-support-fundamentals" target="_blank">coursera</a></li>
+                                    <li><a href="https://www.udemy.com/home/my-courses/learning/" target="_blank">udemy</a></li>
+                                    <li><a href="https://www.freecodecamp.org/learn/" target="_blank">freecodecamp</a></li>
+                                    <li><a href="https://www.sololearn.com/learning/1024" target="_blank">solo learn</a></li>
+                                </ol>
+                            </aside>
+                        </article>
+                    </section>
+                </article>
+                <article class="container_skill">
+                    <section class="skill">
+                        <i class="fa-solid fa-pen skill-name-btn"></i>
+                        <h3 class="skill-name">skill 4</h3>
+                        <input type="number" class="skill-hours" id="skill-4" min="0" max="1000">
+                        <p id="p-input-4"></p>
+                        <i class="fa-solid fa-floppy-disk btn-skill"></i>
+                    </section>
+                    <section class="acordeon_skill" id="container_infoSkill4">
+                        <a href="#container_infoSkill4">Mas informacion</a>
+                        <article class="information_skill">
+                            <article class="information_central">
+                                <section class="information_section">
+                                    <h2>Plan de estudio</h2>
+                                    <ol>
+                                        <li>aprender phyton</li>
+                                        <li>aprender inteligencia artificial</li>
+                                        <li>crear proyectos</li>
+                                    </ol>
+                                </section>
+                                <section class="information_section">
+                                    <h2>Notas</h2>
+                                    <textarea name="notas" class="article-notes" id="notes_skillFour"></textarea>
+                                    <i class="fa-solid fa-floppy-disk btn-skill notes-button" id="bton_notesSkillFour"></i>
+                                </section>
+                            </article>
+                            <aside class="information_aside">
+                                <h2>Cursos</h2>
+                                <ol>
+                                    <li><a href="https://www.youtube.com/watch?v=rfscVS0vtbw&list=WL&index=10&t=12494s">freecodecamp</a></li>
+                                </ol>
+                            </aside>
+                        </article>
+                    </section>
+                </article>
+                <article class="container_skill">
+                    <section class="skill">
+                        <i class="fa-solid fa-pen skill-name-btn"></i>
+                        <h3 class="skill-name">skill 5</h3>
+                        <input type="number" class="skill-hours" id="skill-5" min="0" max="1000">
+                        <p id="p-input-5"></p>
+                        <i class="fa-solid fa-floppy-disk btn-skill"></i>
+                    </section>
+                    <section class="acordeon_skill" id="container_infoSkill5">
+                        <a href="#container_infoSkill5">Mas informacion</a>
+                        <article class="information_skill">
+                            <article class="information_central">
+                                <section class="information_section">
+                                    <h2>Plan de estudio</h2>
+                                    <ol>
+                                        <li>aprender acordes</li>
+                                        <li>aprender partituras</li>
+                                        <li>aprender musica</li>
+                                    </ol>
+                                </section>
+                                <section class="information_section">
+                                    <h2>Notas</h2>
+                                    <textarea name="notas" class="article-notes" id="notes_skillFive"></textarea>
+                                    <i class="fa-solid fa-floppy-disk btn-skill notes-button" id="bton_notesSkillFive"></i>
+                                </section>
+                            </article>
+                            <aside class="information_aside">
+                                <h2>Referencias</h2>
+                                <ol>
+                                    <li><a href="#">acordes</a></li>
+                                </ol>
+                            </aside>
+                        </article>
+                    </section>
+                </article>
+            </section>
         </main>
         <aside class="aside-principal">
             <div class="container-cronometro">
@@ -96,7 +283,12 @@
                 <input type="button" value="convertir" id="btn-convertir" class="btn-convertir">
             </div>
         </aside>
-        <footer class="footer-principal"><h2>footer</h2></footer>
+        <footer class="footer-principal">
+            <h4>Author: Sergio Arriaga</h4>
+            <a href="https://github.com/sedarmek" target="_blank">Github</a>
+            <a href="www.linkedin.com/in/sergio-daniel-arriaga-juarez" target="_blank">Linkedin</a>
+        </footer>
     </div>
+    <script src="./js/notes.js"></script>
 </body>
 </html>

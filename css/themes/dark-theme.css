@@ -1,6 +1,5 @@
 :root {
-  --bgcolor-body: transparent;
-  --bgcolor-main-container: #363439;
+  --bgcolor-main-container: red;
   --color-oscuro1: #212326;
   --color-oscuro2: #1E2124;
   --color-oscuro3: #2B2F33;
@@ -9,91 +8,88 @@
   --bgcolor-button: var(--color-claro);
 }
 
-body {
-  background-color: var(--bgcolor-body);
-}
-body .main-container {
-  background-color: var(--bgcolor-main-container);
-}
-body .main-container .header-principal {
+.header-principal {
   background-color: var(--color-oscuro1);
 }
-body .main-container .header-principal .header-menu {
+.header-principal .header-menu {
   background-color: var(--color-base);
 }
-body .main-container .header-principal .header-menu li {
+.header-principal .header-menu li {
   background-color: var(--color-claro);
 }
-body .main-container .main-principal {
+
+.main-principal {
   background-color: var(--color-oscuro2);
 }
-body .main-container .main-principal .container-avatar {
+.main-principal .container-avatar {
   background-color: var(--color-oscuro3);
 }
-body .main-container .main-principal .article-motivation {
+.main-principal .article-motivation {
   background-color: var(--color-oscuro3);
 }
-body .main-container .main-principal .articles {
+.main-principal .articles {
   background-color: var(--color-oscuro3);
 }
-body .main-container .main-principal .articles li {
+.main-principal .articles li {
   background-color: var(--color-base);
 }
-body .main-container .main-principal .articles .article-notes {
+.main-principal .articles .article-notes {
   background-color: var(--color-oscuro2);
 }
-body .main-container .main-principal .articles .notes-button {
+.main-principal .articles .notes-button {
   background-color: var(--bgcolor-button);
 }
-body .main-container .main-principal .skill {
+.main-principal .skill {
   background-color: var(--color-oscuro3);
 }
-body .main-container .main-principal .skill .skill-name-btn {
+.main-principal .skill .skill-name-btn {
   background-color: var(--bgcolor-button);
 }
-body .main-container .main-principal .skill .skill-hours {
+.main-principal .skill .skill-hours {
   border: 2px solid var(--color-claro);
   background-color: var(--color-base);
 }
-body .main-container .main-principal .btn-skill {
+.main-principal .btn-skill {
   background-color: var(--bgcolor-button);
 }
-body .main-container .aside-principal {
+
+.aside-principal {
   background-color: var(--color-oscuro2);
 }
-body .main-container .aside-principal .aside-article {
+.aside-principal .aside-article {
   background-color: var(--color-oscuro3);
 }
-body .main-container .aside-principal .aside-article li {
+.aside-principal .aside-article li {
   background-color: var(--color-base);
 }
-body .main-container .aside-principal .container-cronometro {
+.aside-principal .container-cronometro {
   background-color: var(--color-base);
 }
-body .main-container .aside-principal .container-cronometro h3 {
+.aside-principal .container-cronometro h3 {
   background-color: var(--color-oscuro3);
 }
-body .main-container .aside-principal .container-cronometro .container-buttons :nth-child(1),
-body .main-container .aside-principal .container-cronometro .container-buttons :nth-child(2),
-body .main-container .aside-principal .container-cronometro .container-buttons :nth-child(3) {
+.aside-principal .container-cronometro .container-buttons :nth-child(1),
+.aside-principal .container-cronometro .container-buttons :nth-child(2),
+.aside-principal .container-cronometro .container-buttons :nth-child(3) {
   background-color: var(--bgcolor-button);
 }
-body .main-container .aside-principal .container-convertidor {
+.aside-principal .container-convertidor {
   background-color: var(--color-base);
 }
-body .main-container .aside-principal .container-convertidor h3 {
+.aside-principal .container-convertidor h3 {
   background-color: var(--color-oscuro3);
 }
-body .main-container .aside-principal .container-convertidor .convertidor-minutes {
+.aside-principal .container-convertidor .convertidor-minutes {
   background-color: var(--color-base);
 }
-body .main-container .aside-principal .container-convertidor p {
+.aside-principal .container-convertidor p {
   background-color: var(--color-base);
 }
-body .main-container .aside-principal .container-convertidor .btn-convertir {
+.aside-principal .container-convertidor .btn-convertir {
   background-color: var(--bgcolor-button);
 }
-body .main-container .footer-principal {
+
+.footer-principal {
   background-color: var(--color-oscuro1);
 }
 

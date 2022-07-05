@@ -1,10 +1,3 @@
-
-/*
-Task:
-    *.
-    *. poder arrastrar una imagen y guardarla, dentro de motivacion para cada pagina secundaria en skills
-
-*/
 'use strict'
        window.onload = () => {
             //storage
@@ -34,7 +27,8 @@ Task:
             let texto_skill_3 = document.getElementById('p-input-3');
             let texto_skill_4 = document.getElementById('p-input-4');
             let texto_skill_5 = document.getElementById('p-input-5');
-            let btn_skill_save = document.getElementsByClassName('btn-skill');
+            let btn_skill_save = document.querySelectorAll('.skill .btn-skill')
+            // detron de clase .skill en .btn-skill
             let convertidor_minutes = document.getElementById('convertidor-minutes');
             let convertidor_decimals = document.getElementById('convertidor-decimals');
             let btn_empezar = document.getElementById('cron-btn-empezar');

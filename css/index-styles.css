@@ -16,7 +16,6 @@
     min-height: 100vh;
     margin: 0 auto;
     display: grid;
-    grid-gap: 1px;
     grid-template-areas:
     "header"
     "main"
@@ -128,6 +127,9 @@
     justify-content: center;
     align-content: center;
 }
+.container_skill{
+    border-radius: 0.5em;
+}
 .skill{
     border-radius: 0.5em;
     padding: 0.2em;
@@ -142,7 +144,6 @@
     display: inline-block;
     font-size: 1.5em;
     padding: 0.1em;
-    /* line-height: 1.5em; */
     width: 1.5em;
     border-radius: 0.3em;
 }
@@ -157,7 +158,7 @@
     appearance: none;
 }
 .skill h3, .skill p{
-    margin: 0;/*necesita valor 0 para controlar altura de input*/
+    margin: 0;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -168,13 +169,71 @@
     font-size: 1.5em;
     margin-left: 0.5em;
     padding: 0.1em;
-    /* line-height: 1.5em; */
     width: 1.5em;
     border-radius: 0.3em;
+}
+
+.information_skill{
+    overflow: hidden;
+    max-height: 0;
+    display: grid;
+    grid-gap: 0.1em;
+    grid-template-areas: 
+    "info_central info_aside"
+    ;
+}
+.acordeon_skill:target .information_skill{
+    max-height: 1000px;
+}
+.information_section{
+    grid-area: info_central;
+    padding: 0.5em;
+    min-width: 16em;
+    display: grid;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.23);
+}
+.information_section li{
+    text-align: left;
+    list-style-position: inside;
+    text-transform: capitalize;
+    padding: 0.2em;
+    background-color: rgba(204, 204, 204, 0.418);
+}
+.tabla-horizontal {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+    grid-gap: 0.2em;
+}
+.tabla-horizontal li{
+    list-style: none;
 }
 .article-notes{
     margin: 0.5em;
     padding: 1em;
+    width: 18em;
+    height: 5em;
+    background-color: rgba(0, 0, 0, 0.556);
+}
+
+.information_aside{
+    grid-area: info_aside;
+    padding: 0.5;
+    display: grid;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.23);
+    grid-template-rows: 2em 1fr;
+}
+.information_aside ol{
+    padding: 0;
+}
+.information_aside li{
+    text-align: left;
+    list-style-position: inside;
+    text-transform: capitalize;
+    padding: 0.2em;
 }
 .aside-principal{
     text-align: center;
@@ -262,6 +321,7 @@
 }
 .footer-principal{
     grid-area: footer;
+    text-align: center;
     display: grid;
     justify-content: center;
     align-content: center;
