@@ -7,8 +7,11 @@
     --color-claro: #98A5B3;
     
     --bgcolor-button: var(--color-claro);
+    --color-text: white;
 }
-
+*{
+    color: var(--color-text);
+}
 //header
 .header-principal{
     background-color: var(--color-oscuro1);
@@ -22,36 +25,52 @@
 //contenido central
 .main-principal{
     background-color: var(--color-oscuro2);
+    .theme-dark,
+    .theme-light{
+        background-color: var(--color-base);
+    }
     .container-avatar{
         background-color: var(--color-oscuro3);
     }
-    .article-motivation{
-        background-color: var(--color-oscuro3);
+    .article-notes{
+        background-color: var(--color-oscuro2);
     }
-    .articles{
-        background-color: var(--color-oscuro3);
-        li{
-            background-color: var(--color-base);
-        }
-        .article-notes{
-            background-color: var(--color-oscuro2);
-        }
-        .notes-button{
-            background-color: var(--bgcolor-button);
-        }
-    }
-    .skill{
-        background-color: var(--color-oscuro3);
-        .skill-name-btn{
-            background-color: var(--bgcolor-button);
-        }
-        .skill-hours{
-            border: 2px solid var(--color-claro);
-            background-color: var(--color-base);
-        }
-    }
-    .btn-skill{
+    .notes-button{
         background-color: var(--bgcolor-button);
+    }
+    .container_skill{
+        background-color: var(--color-base);
+        .skill{
+            background-color: var(--color-oscuro3);
+            .skill-name-btn{
+                background-color: var(--bgcolor-button);
+            }
+            .skill-hours{
+                border: 2px solid var(--color-claro);
+                background-color: var(--color-base);
+            }
+        }
+        .btn-skill{
+            background-color: var(--bgcolor-button);
+        }
+        .information_section{
+            background-color: var(--color-oscuro1);
+            li{
+                background-color: var(--color-base);
+                li{
+                    background-color: var(--color-claro);
+                }
+            }
+        }
+        .tabla-horizontal{
+            background-color: var(--color-oscuro1);
+            li{
+                background-color: var(--color-base);
+            }
+        }
+        .information_aside{
+            background-color: var(--color-oscuro3);
+        }
     }
 }
 //contenido aside

@@ -6,6 +6,11 @@
   --color-base: #626A73;
   --color-claro: #98A5B3;
   --bgcolor-button: var(--color-claro);
+  --color-text: white;
+}
+
+* {
+  color: var(--color-text);
 }
 
 .header-principal {
@@ -21,36 +26,52 @@
 .main-principal {
   background-color: var(--color-oscuro2);
 }
+.main-principal .theme-dark,
+.main-principal .theme-light {
+  background-color: var(--color-base);
+}
 .main-principal .container-avatar {
   background-color: var(--color-oscuro3);
 }
-.main-principal .article-motivation {
-  background-color: var(--color-oscuro3);
-}
-.main-principal .articles {
-  background-color: var(--color-oscuro3);
-}
-.main-principal .articles li {
-  background-color: var(--color-base);
-}
-.main-principal .articles .article-notes {
+.main-principal .article-notes {
   background-color: var(--color-oscuro2);
 }
-.main-principal .articles .notes-button {
+.main-principal .notes-button {
   background-color: var(--bgcolor-button);
 }
-.main-principal .skill {
+.main-principal .container_skill {
+  background-color: var(--color-base);
+}
+.main-principal .container_skill .skill {
   background-color: var(--color-oscuro3);
 }
-.main-principal .skill .skill-name-btn {
+.main-principal .container_skill .skill .skill-name-btn {
   background-color: var(--bgcolor-button);
 }
-.main-principal .skill .skill-hours {
+.main-principal .container_skill .skill .skill-hours {
   border: 2px solid var(--color-claro);
   background-color: var(--color-base);
 }
-.main-principal .btn-skill {
+.main-principal .container_skill .btn-skill {
   background-color: var(--bgcolor-button);
+}
+.main-principal .container_skill .information_section {
+  background-color: var(--color-oscuro1);
+}
+.main-principal .container_skill .information_section li {
+  background-color: var(--color-base);
+}
+.main-principal .container_skill .information_section li li {
+  background-color: var(--color-claro);
+}
+.main-principal .container_skill .tabla-horizontal {
+  background-color: var(--color-oscuro1);
+}
+.main-principal .container_skill .tabla-horizontal li {
+  background-color: var(--color-base);
+}
+.main-principal .container_skill .information_aside {
+  background-color: var(--color-oscuro3);
 }
 
 .aside-principal {

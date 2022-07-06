@@ -5,7 +5,6 @@
     --border-radius : 0.5em;/*usar*/
 }
 *{
-    color: aliceblue;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     margin: 0;
@@ -46,24 +45,14 @@
     justify-content: center;
     align-content: center;
 }
-.themes-container{
-    position: fixed;
-    right: 0;
-    top: 0;
-}
 .theme-dark,
 .theme-light{
-    background-color: #52a5dcaf;
+    position: fixed;
+    font-size: 1.5em;
+    right: 0;
+    top: 0;
+    border-radius: 0.3em 0 0 0.3em;
     border: 2px solid rgba(220, 220, 220, 0.363);
-    border-radius: 0.5em 0 0 0.5em;
-}
-.theme-dark{
-    display: none;
-}
-.theme-dark i,
-.theme-light i{
-    font-size:2em;
-    color: #ccc;
 }
 .container-avatar{
     margin: 0 auto;
@@ -129,6 +118,7 @@
 }
 .container_skill{
     border-radius: 0.5em;
+    margin-bottom: 0.2em;
 }
 .skill{
     border-radius: 0.5em;
@@ -188,17 +178,18 @@
 .information_section{
     grid-area: info_central;
     padding: 0.5em;
+    margin-left: 0.1em;
+    margin-bottom: 0.1em;
     min-width: 16em;
+    border-radius: 0.3em;
     display: grid;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.23);
 }
 .information_section li{
     text-align: left;
     list-style-position: inside;
     text-transform: capitalize;
     padding: 0.2em;
-    background-color: rgba(204, 204, 204, 0.418);
 }
 .tabla-horizontal {
     display: grid;
@@ -215,15 +206,16 @@
     padding: 1em;
     width: 18em;
     height: 5em;
-    background-color: rgba(0, 0, 0, 0.556);
 }
 
 .information_aside{
     grid-area: info_aside;
     padding: 0.5;
+    margin-right: 0.1em;
+    margin-bottom: 0.1em;
+    border-radius: 0.3em;
     display: grid;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.23);
     grid-template-rows: 2em 1fr;
 }
 .information_aside ol{

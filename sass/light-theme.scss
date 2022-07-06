@@ -2,15 +2,16 @@
     --bgcolor-body: transparent;
     --bgcolor-main-container: #363439;
     --color-oscuro1: #4F6680;
-    --color-oscuro2: #757A80;
+    --color-oscuro2: #415773;
     --color-oscuro3: #BCC3CC;
     --color-base: #EBF4FF;
     --color-claro: #9ECBFF;
     
     --bgcolor-button: var(--color-claro);
+    --color-text: black;
 }
 *{
-    color: black;
+    color: var(--color-text);
 }
 //header
 .header-principal{
@@ -25,39 +26,55 @@
 //contenido central
 .main-principal{
     background-color: var(--color-base);
+    .theme-dark,
+    .theme-light{
+        background-color: var(--color-claro);
+    }
     .container-avatar{
         background-color: var(--color-oscuro3);
         .container-canvas-name-skills h2{
             color: white;
         }
     }
-    .article-motivation{
-        background-color: var(--color-oscuro3);
+    .article-notes{
+        background-color: var(--color-oscuro2);
     }
-    .articles{
-        background-color: var(--color-oscuro3);
-        li{
-            background-color: var(--color-oscuro2);
-        }
-        .article-notes{
-            background-color: var(--color-oscuro2);
-        }
-        .notes-button{
-            background-color: var(--bgcolor-button);
-        }
-    }
-    .skill{
-        background-color: var(--color-oscuro3);
-        .skill-name-btn{
-            background-color: var(--bgcolor-button);
-        }
-        .skill-hours{
-            border: 2px solid var(--color-claro);
-            background-color: var(--color-base);
-        }
-    }
-    .btn-skill{
+    .notes-button{
         background-color: var(--bgcolor-button);
+    }
+    .container_skill{
+        background-color: var(--color-base);
+        .skill{
+            background-color: var(--color-oscuro3);
+            .skill-name-btn{
+                background-color: var(--bgcolor-button);
+            }
+            .skill-hours{
+                border: 2px solid var(--color-claro);
+                background-color: var(--color-base);
+            }
+        }
+        .btn-skill{
+            background-color: var(--bgcolor-button);
+        }
+        .information_section{
+            background-color: var(--color-oscuro1);
+            li{
+                background-color: var(--color-claro);
+                li{
+                    background-color: var(--color-base);
+                }
+            }
+        }
+        .tabla-horizontal{
+            background-color: var(--color-oscuro1);
+            li{
+                background-color: var(--color-base);
+            }
+        }
+        .information_aside{
+            background-color: var(--color-oscuro3);
+        }
     }
 }
 //contenido aside
