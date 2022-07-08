@@ -90,6 +90,7 @@
     position: absolute;
     background: linear-gradient(90deg, rgb(109, 177, 213), rgb(26, 26, 206));
     -webkit-background-clip: text;
+    background-clip: text;
     animation: animated 2s infinite;
 }
 @keyframes animated {
