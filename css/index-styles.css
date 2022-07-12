@@ -80,6 +80,7 @@
     grid-area: img;
 }
 .canvas_nameSkill h2{
+    font-family: Arial;
     font-size: 1.2em;
     color: transparent;
     font-weight: 1200;
@@ -88,17 +89,17 @@
     width: auto;
     margin: auto;
     position: absolute;
-    background: linear-gradient(90deg, rgb(109, 177, 213), rgb(26, 26, 206));
+    background: linear-gradient(90deg, rgb(58, 176, 255), rgb(116, 116, 255));
     -webkit-background-clip: text;
     background-clip: text;
-    animation: animated 2s infinite;
+    animation: animated 1s infinite;
 }
 @keyframes animated {
     0%, 100%{
         opacity: 1;
     }
     33.37%, 80%{
-        opacity: 0.6;
+        opacity: 0.85;
     }
 }
 .canvas_nameSkill :first-child{
